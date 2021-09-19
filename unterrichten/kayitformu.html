@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kayit formu</title>
+  </head>
+  <body>
+    <p>action: sunucudaki gönderme harekti icin eklenen bir kod dur.</p>
+    <p>input:giris icin tiklama yaptik</p>
+    <p>label:yazi yeri olustur</p>
+    <p>placeholder= ipucu veriyor yazilacak yere</p>
+    <p>input un value kisimlarina kalici bir sey yazilabilir</p>
+    <p>type kismi</p>
+    <p>hidden ekranda görünmez sunucuya gönderilir.</p>
+    <p>
+      submit ile server ea gidiyor method="POST" olursa bilgiler sunucuya gizli
+      gider
+    </p>
+    <p>type i button olnlar icin mutlka js baglanmasi gerekir.</p>
+    <p>disabled o boslugu pasif hale getirir.</p>
+
+    <p>for ve id ayni olunca yaziya da bassan checckbox a isaretliyor</p>
+
+    <p>eger label input tan sonra ise checkbox onde futbol arkada olur</p>
+
+    <p>cinsiyet yinsiyet ile grup yapiyor</p>
+
+    <p>multiple select te birden fazla secim yapilabilir</p>
+    <p>selecteki size 2 adet option gösterir</p>
+
+    <p>text icin sinirlamalar: slat ta var required: minlengt="2"</p>
+    <p>min max numberde olmasi gereken degerleri belirtir</p>
+
+    <form action="server/kayit.php" method="POST">
+      <p>
+        <label for="ad">Adiniz:</label>
+        <input id="ad" type="text" value="Ali" disabled />
+      </p>
+      <p>
+        <label for="soyad">Soyadiniz:</label>
+        <input
+          id="soyad"
+          type="text"
+          placeholder="Soyadinizi giriniz"
+          required
+        />
+      </p>
+
+      <p>
+        <label for="sifre">Sifreniz:</label>
+        <input id="sifre" type="password" minlengt="6" maxlength="8" />
+      </p>
+      <p>
+        <label for="deneyim">Deneyim</label>
+        <input type="number" id="deneyim" min="1" max="5" />
+      </p>
+      <p><label for="ara">ara</label> <input type="search" id="ara" /></p>
+
+      <p><input type="hidden" name="id" value="12345" /></p>
+
+      <p>
+        <input type="button" value="Gönder" />
+      </p>
+      <p>
+        <input type="submit" value="kontrol et" />
+      </p>
+      <p>
+        <input type="reset" value="temizle" />
+      </p>
+      <p>
+        <label for="hobi">Hobiler</label><br />
+        <input type="checkbox" name="futbol" id="futbol" value="futbol" />futbol
+        <br />
+        <input
+          type="checkbox"
+          name="basketbol"
+          id="basketbol"
+          value="basketbol"
+        />basketbol
+      </p>
+
+      <p>
+        <label for="cinsiyet">cinsiyet</label><br />
+        <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
+        <label for="erkek">erkek</label><br />
+
+        <input type="radio" name="cinsiyet" id="kadin" value="kadin" />
+        <label for="kadin">kadin</label><br />
+      </p>
+
+      <p>
+        <label for="">Avatar</label>
+        <input type="file" name="avatar" id="avatar" />
+      </p>
+      <p>
+        <label for="dogum">dogum tarihi</label>
+        <input type="date" name="dogum" id="dogum" />
+      </p>
+      <p>
+        <label for="dogumyeri">dogum yeri</label>
+        <select name="dogum" id="dogumyeri" size="2">
+          <option value="1">adana</option>
+          <option value="2">adiyaman</option>
+          <option value="3">agri</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="Adres">Adres</label>
+        <textarea name="adres" id="Adres" cols="30" rows="10"></textarea>
+      </p>
+    </form>
+  </body>
+</html>
