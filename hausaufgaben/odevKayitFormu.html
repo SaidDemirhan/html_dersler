@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayit icin</title>
+    <style>
+        form>table{
+            border-style: solid;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kayit Formu</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>Adi:</td>
+                <td>
+                    <label for="ad"></label>
+                    <input type="text" name="ad" id="ad" required>
+                </td>
+                <td></td>
+                <td rowspan="2">Hobiler:</td>
+                <td rowspan="2">
+                    <input type="checkbox" name="hobi1" id="hobi1">
+                    <label for="hobi1">Futbol</label><br>
+                    <input type="checkbox" name="hobi2" id="hobi2">
+                    <label for="hobi2">Voleybol</label><br>
+                    <input type="checkbox" name="hobi3" id="hobi3">
+                    <label for="hobi3">Basketbol</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>Soyadi:</td>
+                <td>
+                    <label for="soyad"></label>
+                    <input type="text" name="soyad" id="soyad" required>
+                </td>
+                <td></td>
+                
+                
+            </tr>
+            <tr>
+                <td>Cinsiyet:</td>
+                <td>
+                    <input type="radio" name="c1" id="c1">
+                    <label for="c1">Bay</label>
+                    <input type="radio" name="c2" id="c2">
+                    <label for="c2">Bayan</label>
+                </td>
+                <td></td>
+                <td>Profil Fotografi:</td>
+                <td>
+                    <label for="foto" aria-placeholder="Dosya seciniz"></label>
+                    <input type="file" name="foto" id="foto">
+                </td>
+            </tr>
+            <tr>
+                <td>Bulundugu Yer:</td>
+                <td>
+                    <label for="ulke"></label>
+                    <select name="ulke" id="ulke">
+                        <option value="1">Türkiye</option>
+                        <option value="2">Avrupa</option>
+                        <option value="3">Amerika</option>
+                        <option value="4">Asya</option>
+                        <option value="5">Avustralya</option>
+                    </select>
+                </td>
+                <td></td>
+                <td>Dogum Tarihi:</td>
+                <td>
+                    <label for="dt"></label>
+                    <input type="date" name="dt" id="dt">
+                </td>
+            </tr>
+            <tr>
+                <td>E-Posta:</td>
+                <td>
+                    <label for="eposta"></label>
+                    <input type="text" name="eposta" id="eposta" required>
+                </td>
+                <td></td>
+                <td rowspan="2">Adres: </td>
+                <td rowspan="2">
+                    <label for="adres"></label>
+                    <textarea name="adres" id="adres" cols="30" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Kisisel Site:</td>
+                <td>
+                    <label for="website"></label>
+                    <input type="text" name="website" id="website">
+                </td>
+                <td></td>
+                
+                
+            </tr>
+            <tr>
+                <td>Telefon</td>
+                <td>
+                    <label for="tel"></label>
+                    <input type="tel" name="tel" id="tel">
+
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit">Kayit Ol</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
