@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Basvuru Formu</title>
+    <style>
+      body {
+        background-color: rgb(0, 183, 255);
+        text-align: left;
+      }
+      .h1 {
+        width: 700;
+      }
+      .iccerceve {
+        width: 700px;
+        background-color: white;
+      }
+      .digerbilgiler {
+        display: inline-block;
+      }
+      .genelbilgiler {
+        display: inline-block;
+      }
+      .soru th {
+        border: 1px solid black;
+      }
+      .soru td,
+      .buton {
+        text-align: center;
+      }
+      .soru .sorubaslik {
+        border: none;
+      }
+      .basvur {
+        background-color: aqua;
+      }
+      .iptal {
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="discerceve">
+      <span class="h1"><h1>IS BASVURU FORMU</h1></span>
+      <div class="iccerceve">
+        <form action="#">
+          <table class="buyuktablo">
+            <tr>
+              <td>
+                <div class="genelbilgiler">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="2"><h2>Genel Bilgiler</h2></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Adiniz*</td>
+                        <td>
+                          <label for="ad"></label>
+                          <input type="text" name="ad" id="ad" required />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Soyadiniz*</td>
+                        <td>
+                          <label for="soyad"></label>
+                          <input type="text" name="soyad" id="soyad" required />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>TC*</td>
+                        <td>
+                          <label for="tc"></label>
+                          <input type="text" name="tc" id="tc" required />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <br /><br /><br />
+                  <h3>Cinsiyetiniz</h3>
+                  <input type="radio" name="kiz" id="kiz" />
+                  <label for="kiz">Kiz</label>
+                  <input type="radio" name="e" id="e" />
+                  <label for="e">Erkek</label>
+                  <br /><br /><br />
+                </div>
+                <div>
+                  <label for="dg">Dogum Gününüz*</label>
+                  <input type="date" name="dg" id="dg" required />
+                  <br /><br />
+                </div>
+                <div>
+                  <h2>Iletisim Bilgileri</h2>
+                  <label for="tel">Telefon*</label>
+                  <input type="tel" name="tel" id="tel" />
+                  <br /><br />
+                  <label for="email">Email*</label>
+                  <input type="text" name="email" id="email" />
+                  <br /><br />
+                  <label for="adres">Adres</label>
+                  <textarea
+                    name="adres"
+                    id="adres"
+                    cols="30"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </td>
+              <td>
+                <div class="digerbilgiler">
+                  <h2>Diger Bilgiler</h2>
+
+                  <h3>Ehliyetiniz var mi?</h3>
+
+                  <input type="radio" name="evet" id="evet" />
+                  <label for="evet">Evet</label>
+                  <input type="radio" name="hayir" id="hayir" />
+                  <label for="hayir">Hayir</label>
+
+                  <h3>Ögrenim Durumunuz*</h3>
+
+                  <label for="ogrenim"></label>
+                  <select name="ogrenim" id="ogrenim" required>
+                    <option value="1">Lisans</option>
+                    <option value="2">Lise</option>
+                    <option value="3">Ilkögretim</option>
+                  </select>
+                  <br /><br /><br /><br /><br /><br />
+                </div>
+                <div>
+                  <table class="soru">
+                    <thead>
+                      <tr>
+                        <th class="sorubaslik">(SORULAR&SEVIYELER)</th>
+                        <th>Kötü</th>
+                        <th>Orta</th>
+                        <th>Iyi</th>
+                        <th>Cok Iyi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th><label for="il">Iletisim kurma becerisi</label></th>
+                        <td><input type="radio" name="k" id="il" /></td>
+                        <td><input type="radio" name="o" id="il" /></td>
+                        <td><input type="radio" name="i" id="il" /></td>
+                        <td><input type="radio" name="c" id="il" /></td>
+                      </tr>
+                      <tr>
+                        <th><label for="t">Takim calismasi</label></th>
+                        <td><input type="radio" name="k" id="t" /></td>
+                        <td><input type="radio" name="o" id="t" /></td>
+                        <td><input type="radio" name="i" id="t" /></td>
+                        <td><input type="radio" name="c" id="t" /></td>
+                      </tr>
+                      <tr>
+                        <th><label for="b">Bilgisayar bilgisi</label></th>
+                        <td><input type="radio" name="k" id="b" /></td>
+                        <td><input type="radio" name="o" id="b" /></td>
+                        <td><input type="radio" name="i" id="b" /></td>
+                        <td><input type="radio" name="c" id="b" /></td>
+                      </tr>
+                      <tr>
+                        <th><label for="in">Ingilizce bilgisi</label></th>
+                        <td><input type="radio" name="k" id="in" /></td>
+                        <td><input type="radio" name="o" id="in" /></td>
+                        <td><input type="radio" name="i" id="in" /></td>
+                        <td><input type="radio" name="c" id="in" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <br /><br /><br />
+                </div>
+                <div>
+                  Eklemek istedikleriniz
+                  <textarea name="ek" id="ek" cols="30" rows="5"></textarea>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="buton">
+            <br /><br />
+            <button class="basvur">BASVUR</button>
+            <button class="iptal">IPTAL ET</button>
+            <br /><br />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
