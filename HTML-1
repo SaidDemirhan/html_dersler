@@ -1,26 +1,122 @@
-<!doctype html>
-<!--steht für den Dokumententyp HTML5-->
-<html lang="de"> <!--Öffnendes HTML Tag mit einem Attribut für die Seitensprache und der Eigenschaft-->
-<head> <!--Öffnendes Head Tag-->
-<meta charset="utf-8"> <!-- Legt den Zeichen utf-8 / unicode(Umlaute, fremde 
-Zeichen etc.)-->
-<meta name="robots" content="index,follow"> <!--Sagt allen Suchmaschinen, dass sie 
-der Seite folgen sollen, in diesem Fall alle Suchchmaschinen. Möchte  man nur Google
-ansprechen, schreibt man name="googleboot". 
-Möchte man eine Seite nicht indexiert und
-gefolgt haben, kann man folgendes schreiben:
-<meta name="robots" content="noindex,nofollow"> -->
-<title>Mein Webseite Template</title>
-<!--Der Titel der Webseite, zu finden im Browswer Tab. 
-die Ideale Titellänge  beträgt zwischen 55 und 65 Zeichen, 
-das Maximum liegt bei 70 Zeichen-->
-<meta name="description" content="Hier kommt die Beschreibung 
-der jeweiligen Webseite rein. Optimal sind 150-155 Zeichen. Das Maximum liegt 160">
-<!--Das ist die meta Beschreibung der Webseite. Diese wird mit dem Title in den 
-Google Suchergebnisse ausgegeben. In diesem Beispiel sind Name und Content Atribute, 
-description und die Beschreibung sind Eigenschaften-->
-</head> <!--Schließendes Head Tag-->
-<body> <!--Öffendes Boyy Tag (Hier kommt der komplette Inhalt der Webseite rein)-->
-Hallo Welt!!! Das ist der eigentlich Inhalt der Webseite. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notlari</title>
+</head>
+<body>
+    <h1>HTML Notlari</h1>
+    <h2>Örnek bir template görünümü</h2>
+    &lt;html lang="de"> <br>
+    &lt;head> <br>
+    &lt;meta charset="utf-8"> <br>
+    &lt;meta name="robots" content="index,follow"> <br>
+    &lt;title>Mein Website Template&lt;/title> <br>
+    &lt;meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160.">
+    &lt;/head> <br>
+    &lt;body> <br>
+    Das ist der eigentlich Inhalt der Website
+    &lt;/body> <br>
+    &lt;/html> <br>
+    <h2>html Tagi</h2>
+    &lt;html lang="de"> <br>
+    dilin hangisi olmasi istenirse kisaltilarak yazilir. <br>
+    <h2>meta Taglari</h2>
+    &lt;meta charset="utf-8"> <br>
+    neredeyse tüm dünya dillerindeki karakterleri barindirir. <br><br>
+    &lt;meta name="robots" content="index,follow"> <br>
+    Tüm arama motorlarina sayfayi takip etmelerini söyler. <br>
+    Yalnizca Google'a hitap etmek istiyorsaniz, name="googlebot" yazarsiniz. <br>
+    Bir sayfanin indexlenmesini ve takip edilmesini istemiyorsaniz aşağidakileri yazabilirsiniz: <br>
+    &lt;meta name="robots" content="noindex,nofollow"> <br><br>
+    &lt;meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160."> <br>
+    web sitesinin meta açiklamasidir. Bu, Google arama sonuçlarinda başlikla birlikte görüntülenir. <br>
+    <h2>Özel karakterler</h2>
+    (Boşluk)	Boşluk vermeye yarar.	&amp;nbsp; <br>
+&lt;	Küçüktür işareti:	&amp;lt; <br>
+&gt;	Büyüktür işareti:	&amp;gt; <br>
+&amp;	Ve işareti:	&amp;amp; <br>
+&quot;	Tirnak:	&amp;quot; <br>
+&#39;	Ayiraç:	&amp;#39; <br>
+&amp;#9986; = &#9986; <br>
+&amp;copy; = &copy; <br>
+&amp;9992; = &#9992; <br>
+&amp;euro; = &euro; <br>
+<h2>Yazi Stilleri</h2>
+&lt;b> <br>
+&lt;strong> <br>
+Mantiksal (semantik) anlamsal vurgulama. Güçlü metin vurgu ve önem ile vurgulanir. <br>
+Daha çok görme engellilerin ekran okuyuculari için ve Google tarafindan daha önemli kabul ediliyor. <strong>Örnek</strong> <br><br>
+
+&lt;i> <br>
+&lt;em> <br>
+italik yazar vurgu manasina gelir. özellikle görme engelliler ve ekran okuyuculari icin önemlidir. <em>Örnek</em> <br><br>
+
+&lt;small> <br>
+metni digerlerinden dah akücük yazdirir. <small>Örnek</small> <br><br>
+
+&lt;sup> <br>
+üs olarak yazdirir. 100<sup>3</sup><br><br>
+
+&lt;sub> <br>
+alt olarak yazdirir. H<sub>2</sub>O<br><br>
+
+<h2>Paragraflar</h2>
+
+&lt;h1>Headline der Größe 1&lt;/h1>
+<h1>Headline der Größe 1</h1>
+      
+&lt;h2>Headline der Größe 2&lt;/h2>
+<h2>Headline der Größe 2</h2>
+
+&lt;h3>Headline der Größe 3&lt;/h3>
+<h3>Headline der Größe 3</h3>
+
+&lt;h4>Headline der Größe 4&lt;/h4>
+<h4>Headline der Größe 4</h4>
+
+&lt;h5>Headline der Größe 5&lt;/h5>
+<h5>Headline der Größe 5</h5>
+
+&lt;h6>Headline der Größe 6&lt;/h6>
+<h6>Headline der Größe 6</h6> <br>
+
+&lt;br> <br> alt satira gecmek icin kullanilir. <br><br>
+
+&lt;p>
+    Ich werde hier noch die Stellung halten, bis der geplante Text eintrifft. Ich wünsche Ihnen noch einen schönen Tag. Und arbeiten Sie nicht zuviel! 
+    Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein 
+    und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue 
+    ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. 
+&lt;/p> <br>
+paragraf yapmak icin kullanilir. <br><br>
+
+<h2>Liste Olusturma</h2>
+
+&lt;ul> <br>
+    &nbsp;&lt;li>Wurst <br>
+        &nbsp;&nbsp;&lt;ul> <br>
+            &nbsp;&nbsp;&nbsp;&lt;li>Mettwurst&lt;/li> <br>
+            &nbsp;&nbsp;&lt;&nbsp;li>Salami&lt;/li> <br>
+        &nbsp;&nbsp;&lt;/ul> <br>
+    &nbsp;&lt;/li>   <br>
+    &nbsp;&lt;li>Käse&lt;/li> <br>
+    &nbsp;&lt;li>Saft&lt;/li> <br>
+    &nbsp;&lt;/ul> <br>
+
+<ul>
+    <li>Wurst
+       <ul>
+           <li>Mettwurst</li>
+           <li>Salami</li>
+       </ul>
+   </li>  
+   <li>Käse</li>
+   <li>Saft</li>
+</ul>
+
+    
 </body>
-</html> <!--Schließendes HTML Tag-->
+</html>
