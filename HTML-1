@@ -1,6 +1,6 @@
 <!doctype html>
 <!--steht für den Dokumententyp HTML5-->
-<html> <!--Öffnendes HTML Tag-->
+<html lang="de"> <!--Öffnendes HTML Tag mit einem Attribut für die Seitensprache und der Eigenschaft-->
 <head> <!--Öffnendes Head Tag-->
 <meta charset="utf-8"> <!-- Legt den Zeichen utf-8 / unicode(Umlaute, fremde 
 Zeichen etc.)-->
@@ -20,7 +20,7 @@ der jeweiligen Webseite rein. Optimal sind 150-155 Zeichen. Das Maximum liegt 16
 Google Suchergebnisse ausgegeben. In diesem Beispiel sind Name und Content Atribute, 
 description und die Beschreibung sind Eigenschaften-->
 </head> <!--Schließendes Head Tag-->
-<body>
-Hallo Welt!!!
+<body> <!--Öffendes Boyy Tag (Hier kommt der komplette Inhalt der Webseite rein)-->
+Hallo Welt!!! Das ist der eigentlich Inhalt der Webseite. 
 </body>
 </html> <!--Schließendes HTML Tag-->
