@@ -1,0 +1,26 @@
+<!doctype html>
+<!--steht für den Dokumententyp HTML5-->
+<html> <!--Öffnendes HTML Tag-->
+<head> <!--Öffnendes Head Tag-->
+<meta charset="utf-8"> <!-- Legt den Zeichen utf-8 / unicode(Umlaute, fremde 
+Zeichen etc.)-->
+<meta name="robots" content="index,follow"> <!--Sagt allen Suchmaschinen, dass sie 
+der Seite folgen sollen, in diesem Fall alle Suchchmaschinen. Möchte  man nur Google
+ansprechen, schreibt man name="googleboot". 
+Möchte man eine Seite nicht indexiert und
+gefolgt haben, kann man folgendes schreiben:
+<meta name="robots" content="noindex,nofollow"> -->
+<title>Mein Webseite Template</title>
+<!--Der Titel der Webseite, zu finden im Browswer Tab. 
+die Ideale Titellänge  beträgt zwischen 55 und 65 Zeichen, 
+das Maximum liegt bei 70 Zeichen-->
+<meta name="description" content="Hier kommt die Beschreibung 
+der jeweiligen Webseite rein. Optimal sind 150-155 Zeichen. Das Maximum liegt 160">
+<!--Das ist die meta Beschreibung der Webseite. Diese wird mit dem Title in den 
+Google Suchergebnisse ausgegeben. In diesem Beispiel sind Name und Content Atribute, 
+description und die Beschreibung sind Eigenschaften-->
+</head> <!--Schließendes Head Tag-->
+<body>
+Hallo Welt!!!
+</body>
+</html> <!--Schließendes HTML Tag-->
