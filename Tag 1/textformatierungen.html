@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<title>Textformatierungen</title>
+<meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160.">
+</head>
+<body>
+Das ist die erste Zeile meines Textes.<br><!--<br> = break. Sorgt für einen Zeilenumbruch.-->
+Das ist die Zweite Zeile meines Textes.<br>
+
+HTML hat als Standard nur ein Leerzeichen. Braucht man mehr als ein Leerzeichen so nimmt man die Entity &amp;nbsp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; und erzeugt dadurch zusätzlich Leerzeichen.<br>
+<!--&nbsp steht für non breaking space oder no break space und das bedeutet nicht umbrechender Leerraum also Leerzeichen. Das &amp; steht vor dem nbsp; damit auf der Website der Ausdruck zu lesen ist und nicht als Leerzeichen interpretiert wird.-->
+HTML Entities werden immer mit einem und Zeichen Zeichen eingeleitet und einem Semikolon beendet. Dazwischen kann entweder ein Ausdruck zum Beispiel pound oder der passende Code (#163) stehen. Hier ein paar Beispiele:<br>
+&amp;#9986; = &#9986;<br>
+&amp;copy; = &copy;<br>
+&amp;9992; = &#9992;<br>
+&amp;euro; = &euro;<br>
+
+<b>Das ist ein fettgeschriebener Text</b> mit einem &lt;b>Tag.<br>
+<!--b = bold = Fettschrift. Physische Hervorhebung. Das bedeutet einfach nur fett (optisch, gestalterisch).-->
+<strong>Das ist auch ein fettgeschriebener Text</strong> mit einem &lt;strong>Tag.<br>
+<!--strong = stark = Fettschrift. Logisch semantische Hervorhebung. Der Text in strong wird von der Betonung und Gewichtung her hervorgehoben. Hauptsächlich bei Screenreader von Sehbehinderten und wird bedingt von Google als wichtiger erachtet.-->
+<i>Das ist ein kursiver Text</i> mit &lt;i><br>
+<!--i = italic = kursiv. Physische Hervorhebung. Das bedeutet einfach nur kursiv (optisch, gestalterisch).-->
+<em>Das ist auch ein kursiver Text</em> mit &lt;em><br>
+<!--em emphasis = emphatischer Hervorhebung (mit Nachdruck). Der Text in strong wird von der Betonung und Gewichtung her hervorgehoben. Hauptsächlich bei Screenreader von Sehbehinderten.-->
+<small>Kleiner Text, für z.B. Konsultationsgrößen (Lexika, Bildunterschriften etc.)</small><br>
+<!--small = kleinere Schrift-->
+Hochgestellt, zum Beispiel 100<sup>3</sup><br>
+<!--sup = superscripted = hochgestellt-->
+Tiefgestellt, zum Beispiel H<sub>2</sub>O<br>
+<!--sub = subscript = tiefgestellt-->
+<h1>Headline der Größe 1</h1>
+<h2>Headline der Größe 2</h2>
+<h3>Headline der Größe 3</h3>
+<h4>Headline der Größe 4</h4>
+<h5>Headline der Größe 5</h5>        
+<h6>Headline der Größe 6</h6>
+<!--h Tag sind vordefinierte Überschriftengrößen. Die eigentliche Größe kann man später per CSS anpassen, z.B. falls eine h1 optisch kleiner sein soll als eine h2. Mit h Tags teilt man der Suchmaschine mit, was Hauptüberschrift, Hauptinhalt (h1) ist und mit Zwischenüberschriften in den einzelnen Absätzen strukturiert man seinen Text und hebt noch einmal wichtige Schlüsselwörter, die für den Seiteninhalt wichtig sind, hervor.
+In article und section Tags sind Headlines ab h2 verpflichtend.
+EINE H1 DARF NUR EINMAL PRO SEITE VORKOMMEN, DAMIT IST GEMEINT PRO UNTERSEITE.
+h5 und h6 sind für Google bedeutungslos.
+WICHTIG: Die Reihenfolge der Headlines muss korrekt von oben nach unten abgearbeitet werden.
+BEISPIEL:
+RICHTIG:
+h1
+h2
+h3
+h4
+h5
+h6
+RICHTIG:
+H1
+H2
+H3
+H2
+H3
+H4
+H5
+H6
+RICHTIG:
+H1
+H2
+H2
+H2
+H3
+H3
+H2
+H2
+H3
+H4
+H3
+H4
+H5
+H6
+FALSCH: H1 IST ZWEIMAL
+H1
+H1
+H2
+H3
+H4
+H5
+H6
+FALSCH: H2 ausgelassen
+H1
+h3
+h4
+h5
+h6
+FALSCH: H3 kommt erst nach H4
+H1
+H2
+H4
+H3
+H5 
+H6
+FALSCH: Falsch herum alternierend
+H1
+H3
+H2
+H3
+H2
+H3
+H2
+-->
+
+</body>
+</html>
+
+
+
+
