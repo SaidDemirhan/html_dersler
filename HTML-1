@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Notlari</title>
 </head>
+<style>
+    html{
+        scroll-behavior:smooth;
+    }
+    table,td{
+        border: 1px solid black;
+        border-collapse: collapse; 
+        padding: 6px;
+    }
+    tfoot{
+        background: #c9c9c9;
+    }
+    thead{
+        background: hotpink;
+    }
+    tbody{
+        background: rgb(177, 227, 208);
+    }
+    #kelime{
+        background: pink;
+    }
+    
+</style>
 <body>
     <h1>HTML Notlari</h1>
     <h2>Örnek bir template görünümü</h2>
@@ -116,7 +139,168 @@ paragraf yapmak icin kullanilir. <br><br>
    <li>Käse</li>
    <li>Saft</li>
 </ul>
+&lt;ol> <br>
+    &nbsp;&lt;li>&nbsp;&lt;/li> <br>
+&lt;/ol> <br>
+<ol>
+    <li>Bayern Müncen
+        <ul>
+            <li>1992</li>
+            <li>2001</li>
+        </ul>
+    </li>
+    <li>Herta Berlin <br> Schalke 04</li>
+    <li value="4">LB Leipzig</li>
+    <li value="4">Bayern Leverkusen</li>
+    <li>Borissia Dortmund</li>
+</ol>
 
+<strong>value</strong> attributlariyla sira belirlenebilir <br>
+<strong>start</strong> atributuyla kactan baslayacagi belirlenebilir. <br><br>
+
+&lt;dl> <br>
+    &nbsp;&lt;dt>&nbsp;&lt;/dt> <br>
+    &nbsp;&lt;dd>&nbsp;&lt;/dd> <br>
+&lt;/dl> <br>
     
+<dl>
+    <dt>Harfler</dt>
+    <dd>b</dd>
+    <dd>c</dd>
+    <dt>sayilar</dt>
+    <dd>2</dd>
+    <dd>3</dd>
+</dl>
+
+<h2>Tabelalar</h2>
+&lt;table> <br>
+&lt;tr> <br>
+&lt;td>&lt;/td> <br>
+&lt;/tr> <br>
+&lt;/table> <br><br>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+border="1" atributu eklenebilir ama yanlis olur <br>
+head ile body nin arasina style eklenip: <br>
+table,td{ <br>
+    border: 1px solid black; <br>
+    border-collapse: collapse; <br>
+    padding: 6px; <br>
+    } <br>
+    padding: tablonun icindeki yazinin cevresine uzakligini ayarlar <br>
+    border-collapse:ayri ayri cizgi olmasini engeller <br>
+    border: cizgi kalinligini, seklini ve rengini ayarlar <br><br>
+
+    <strong>colspan="2"</strong>:Satirdaki hücreleri birlestirir. Horizontal<br>
+    ama kesinlikle birlistirilince altta kalacak hücreleri sil. <br>
+    &lt;td colspan="2">&lt;/td> <br> <br>
+
+    <strong>rowspan="2"</strong>:Sütundaki hücreleri birlestirir. Vertikal<br>
+    ama kesinlikle birlistirilince sütundalardaki altta kalacak hücreleri sil. <br>
+    &lt;td rowspan="2">&lt;/td> <br> <br>
+    Ayrica asagidaki tabela bölümleri de kullanilabilir: <br>
+    &lt;thead> <br>
+    &lt;tbody> <br>
+    &lt;tfoot> <br><br>
+    arka plan icin styla kismina: <br>
+thead{ <br>
+    background: hotpink; <br>
+} <br> <br>
+<table>
+    <thead>
+        <tr>
+            <td>platz</td>
+            <td>mannschaft</td>
+            <td>punkte</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Fenerbahce</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Galatasayray</td>
+            <td>47</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2">sampiyonlar ligi <br>avrupa ligi <br>konferans ligi</td>
+                <td>1<br>2 <br>3</td>
+            </tr>
+        </tfoot>
+    </tbody>
+</table>
+<h2>Hyperlinks</h2>
+<h3>ayri bir sayfa</h3>
+&lt;a> Tagi kullanilarak olusturulur. <br>
+&lt;a href="https://amazon.de">Amazon a gitmek icin tiklayiniz&lt;/a> <br>
+<a href="https://amazon.de" target="new">Amazon a gitmek icin tiklayiniz</a> <br><br>
+<strong>target="_blank"</strong> ayri bir sekmede acmak icin kullanilan atributtur. <br>
+<strong>target="new"</strong> acilacak tüm sayfalari sadece diger sayfada veya sekmede
+ acmak icin kullanilan atributtur.
+&lt;a href="https://amazon.de" target="_blank"> <br>
+<strong>mailto:</strong>, mail göndermek icin kullanilir. <br>
+&lt;a href="mailto:said@gmail.com">bana ulasin&lt;/a> <br>
+
+<h3>ayni sayfa icinde</h3>
+gidilmek istenilen Tag a bir <strong>id</strong> verilmeli. <br>
+<ul>
+    <li>en az 3 harften olusmali</li>
+    <li>rakamla baslamamali </li>
+    <li>türkce karakterler icermemeli</li>
+    <li>kücük harflerle yazilmali</li>
+    <li>bosluk olmamali onun yerine kisa cizgi kullanilmali</li>
+    <li>Bir ID den SADECE BIR TANE OLMALI</li>
+</ul>
+
+&lt;h3 id="bolum-3"> <br>
+&lt;a href="#bolum-3"> <br>
+eger en yükari cikilmak istenirse <strong>#top</strong> yazilmasi yeterlidir. <br><br>
+eger kaymasini istiyorsak style kismina; <br>
+html { <br>
+    scroll-behavior: smooth; <br>
+} <br>
+<a href="#top">yukari</a> <br><br>
+
+
+parcadaki bir kelimeye <strong>span</strong> elementini ekleyerek o kelimeye id verdigimizde 
+istedigimiz yerden kelimeye ulasabiliriz. <br>
+
+&lt;span id="kelime">kelime&lt;/span> <br>
+&lt;a href="#kelime">kelimeye gitmek icin tikla&lt;/a> <br><br>
+
+<span id="kelime">kelime</span> <br>
+<a href="#kelime">kelimeye gitmek icin tikla</a> <br>
+
+eger style kisminda kelimenin arka plani boyamak istersek; <br>
+
+#kelime{ <br>
+    background: pink; <br>
+} <br><br>
+
+eger baska bir html ile bag kurulacaksa; <br>
+&lt;a href="iletisim.html">ILETISIM&lt;/a> <br>
+<a href="iletisim.html">ILETISIM</a> <br>
+
+
+
+
+
+
+
 </body>
 </html>
