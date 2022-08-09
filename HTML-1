@@ -86,6 +86,14 @@ metni digerlerinden dah akücük yazdirir. <small>Örnek</small> <br><br>
 &lt;sub> <br>
 alt olarak yazdirir. H<sub>2</sub>O<br><br>
 
+&lt;u> <br>
+alti cizili  olarak yazdirir. <u>alti cizili</u> <br><br>
+
+&lt;mark> <br>
+fosforlu kalemle cizer. <mark>sari isaretli</mark>
+
+
+
 <h2>Paragraflar</h2>
 
 &lt;h1>Headline der Größe 1&lt;/h1>
@@ -107,6 +115,10 @@ alt olarak yazdirir. H<sub>2</sub>O<br><br>
 <h6>Headline der Größe 6</h6> <br>
 
 &lt;br> <br> alt satira gecmek icin kullanilir. <br><br>
+
+&lt;hr> cizgi cekmek icin kullanilir. <hr> <br><br>
+
+&lt;!-- --> yorum yapmak icin kullanilir. <br><br>
 
 &lt;p>
     Ich werde hier noch die Stellung halten, bis der geplante Text eintrifft. Ich wünsche Ihnen noch einen schönen Tag. Und arbeiten Sie nicht zuviel! 
@@ -217,12 +229,14 @@ table,td{ <br>
 thead{ <br>
     background: hotpink; <br>
 } <br> <br>
+
+ayrica bas kismin vurgulu görünmesi istenirse td yerine <strong>&lt;th></strong> kullanilmalidir. <br><br>
 <table>
     <thead>
         <tr>
-            <td>platz</td>
-            <td>mannschaft</td>
-            <td>punkte</td>
+            <th>platz</th>
+            <th>mannschaft</th>
+            <th>punkte</th>
         </tr>
     </thead>
     <tbody>
@@ -244,6 +258,11 @@ thead{ <br>
         </tfoot>
     </tbody>
 </table>
+
+<br><br>
+    eger tablo genisligini degistirmek istersek; <br>
+    &lt;table width="50%"> <br>
+    bu sekilde ekranin yarisini kaplamis olur.
 <h2>Hyperlinks</h2>
 <h3>ayri bir sayfa</h3>
 &lt;a> Tagi kullanilarak olusturulur. <br>
@@ -270,11 +289,12 @@ gidilmek istenilen Tag a bir <strong>id</strong> verilmeli. <br>
 &lt;h3 id="bolum-3"> <br>
 &lt;a href="#bolum-3"> <br>
 eger en yükari cikilmak istenirse <strong>#top</strong> yazilmasi yeterlidir. <br><br>
+<a href="#top">yukari</a> <br><br>
 eger kaymasini istiyorsak style kismina; <br>
 html { <br>
     scroll-behavior: smooth; <br>
 } <br>
-<a href="#top">yukari</a> <br><br>
+
 
 
 parcadaki bir kelimeye <strong>span</strong> elementini ekleyerek o kelimeye id verdigimizde 
@@ -294,10 +314,213 @@ eger style kisminda kelimenin arka plani boyamak istersek; <br>
 
 eger baska bir html ile bag kurulacaksa; <br>
 &lt;a href="iletisim.html">ILETISIM&lt;/a> <br>
-<a href="iletisim.html">ILETISIM</a> <br>
+<a href="Notlar.html">Notlar</a> <br>
 
 
 
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+
+<h2>resim ekleme</h2>
+<strong>img</strong> kapatmaya gerek yoktur.
+&lt;img src="resim linki"> <br>
+<img src="data:image/jpeg;base64,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">
+<br><br>
+eger resme link vermek istersek; <br>
+&lt;a href="https://amazon.de">&lt;img src="resim linki">&lt;/a> <br>
+<a href="https://amazon.de"><img src="data:image/jpeg;base64,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">
+</a> <br><br>
+eger resmin boyutunu ayarlamak istersek; <br>
+&lt;img src="resim linki" width="150px" height="150px"> <br>
+
+<h2>Buton olusturma</h2>
+&lt;button>TIKLA&lt;/button> <br>
+<button>TIKLA</button> <br><br>
+eger butona tiklandiginda istenilen siteye gitmesini istersek; <br>
+&lt;a href="https://amazon.de">&lt;button>TIKLA&lt;/button>&lt;/a> <br>
+<a href="https://amazon.de"><button>TIKLA</button></a> <br><br>
+istersek a etiketini buton tag inin icine de koyabilirdir. <br><br>
+
+<h2>sayfada alan olusturma</h2>
+&lt;div> <br>
+satirin tamamini kapsar <br>
+&lt;div style="background-color: yellow;">satiri kapsar&lt;/div> <br>
+<div style="background-color: yellow;">satiri kapsar</div><br>
+
+&lt;span> <br>
+yazinin oldugu kadar alan kaplar <br>
+&lt;span style="background-color: green;">yazi alani&lt;/span> <br>
+<span style="background-color: green;">yazi alani</span>
+
+<h2>Form olusturma</h2>
+Mutlaka <strong>form</strong> etiketinin icinde olmalidir. <br><br>
+&lt;form action="https://amazon.de" method="get"><br>
+&lt;div><br>
+&lt;label for="">Isim giriniz&lt;/label><br>
+&lt;input type="text" name="isim"><br>
+&lt;/div><br>
+&lt;div><br>
+&lt;label for="">Mail giriniz&lt;/label><br>
+&lt;input type="email" name="email"> <br>
+&lt;/div> <br>
+&lt;button type="submit">Gönder&lt;/button> <br>
+&lt;Input type="submit" value="Gönder">&lt;/Input> <br>
+&lt;/form> <br><br>
+eger form daki method yerine <strong>get</strong> yazilirsa bilgiler görünerek gider. <strong>post</strong>
+yazilirsa gizliden gider.
+buton input veya button olarak iki türlü de olusturulabilir. <br><br>
+
+<form action="https://amazon.de" method="get">
+    <div>
+        <label for="">Isim giriniz</label>
+        <input type="text" name="isim">
+    </div>
+    <div>
+        <label for="">Mail giriniz</label>
+        <input type="email" name="email">
+    </div>
+    <button type="submit">Gönder</button> <br>
+    <Input type="submit" value="Gönder"></Input>
+</form> <br>
+sifre icin input type <strong>password</strong> olmali <br> <br>
+&lt;div> <br>
+&lt;label for="">Mail giriniz&lt;/label> <br>
+&lt;input type="password"> <br>
+&lt;/div> <br> <br>
+<div>
+    <label for="">Mail giriniz</label>
+    <input type="password"> 
+</div> <br>
+
+cinsiyet icin type <strong>radio</strong> olmali, eger tek bir secim yapilmasi gerekiyorsa;<br>
+<strong>name</strong>ler ayni olmalidir. <br><br>
+&lt;div> <br>
+&lt;label for="">cinsiyet&lt;/label> <br>
+&lt;div> <br>
+&lt;span>Erkek:&lt;/span>&lt;input type="radio" name="cins" value="erkek"> <br>
+&lt;/div> <br>
+&lt;div> <br>
+&lt;span>Kadin:&lt;/span>&lt;input type="radio" name="cins" value="kadin"> <br>
+&lt;/div> <br>
+&lt;/div> <br><br>
+<div>
+    <label for="">cinsiyet</label>
+    <div>
+        <span>Erkek:</span><input type="radio" name="cins" value="erkek">
+    </div>
+    <div>
+        <span>Kadin:</span><input type="radio" name="cins" value="kadin">
+    </div>
+</div> <br>
+<strong>radio</strong>da  seceneklerden bir tanesi mutlaka isaretlenmek zorundadir. <br><br>
+&lt;div><br>
+&lt;label for="">Hobiler&lt;/label><br>
+&lt;div><br>
+&lt;input type="checkbox" name="hobi" value="kitap"> &lt;span>Kitap okumak&lt;/span><br>
+&lt;/div><br>
+&lt;div><br>
+&lt;input type="checkbox" name="hobi" value="yüzme"> &lt;span>yüzmek&lt;/span><br>
+&lt;/div><br>
+&lt;/div> <br><br>
+
+<div>
+    <label for="">Hobiler</label>
+    <div>
+       <input type="checkbox" name="hobi" value="kitap"> <span>Kitap okumak</span>
+    </div>
+    <div>
+        <input type="checkbox" name="hobi" value="yüzme"> <span>yüzmek</span>
+    </div>
+</div><br>
+
+<strong>checkbox</strong> icin isaretleme zorunlulugu yoktur ve birden fazla secenek 
+isaretlenebilir. <br><br>
+
+<strong>&lt;textarea></strong> ile metin girme ekrani olusturulabilir. <br>
+&lt;textarea name="" id="" cols="30" rows="10">yorumunuz&lt;/textarea>
+<textarea name="" id="" cols="30" rows="10">yorumunuz</textarea>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+
+<h1>css özelliklelri</h1>
+
+<strong>head</strong> larin arasina eklenmelidir. <br><br>
+
+&lt;head><br>
+&lt;title>...&lt;/title><br>
+&lt;style><br>
+        h1{<br>
+            background-color: blue; <br>
+            color: black;<br>
+            border: 5px solid green ;<br>
+            border-style: dotted/ dashed/ solid/ double; <br>
+            border-color: red; <br>
+            border-radius: 10px;
+            width: 800px;
+            font-size:20px;
+          }<br>
+&lt;/style><br>
+&lt;/head><br><br>
+
+css de yorum satiri eklemek icin <strong>/* */</strong> yapariz. <br><br>
+
+<strong>padding:10px;</strong> <br>
+yazi ile cerceve arasinda bosluk olusturur. <br>
+padding-left/ right/ bottom/ top <br><br>
+<strong>margin:20px;</strong><br>
+her cerceve kendi etrafina 20px bosluk birakir. <br>
+margin-left/ right/ bottom/ top <br><br>
+
+<strong>text-align: left/right/center</strong> <br>
+metnin yönünü belirler. <br><br>
+
+eger iki css özelligi farkli yerlerde kullanilmissa; <br>
+<strong>!important</strong> yazarak istedigimizi yaptiriririz. <br>
+button:hover { <br>
+    background-color: yellow !imoprtant <br>
+} <br>
+hover; mausla üzerine geldiginde istenilen renge döndürür. <br> <br>
+
+arka plan rengini kaldirmak icin; <br>
+<strong>background-color: transparent;</strong> <br><br>
+
+Eger ekrandaki yazilarin ekran kücülse bile cercevesini tasmasin istersek; <br>
+<strong>line-break: anywhere;</strong> <br><br>
+
+eger ayni kücülme islemi resimde olursa <br>
+<strong>max-width: 500 px; <br>
+width: 100%;</strong> <br><br>
+
+eger bir cercevenin icindeki elemenleri yan yana istersek; <br>
+<strong>display: flex;</strong> <br><br>
+
+eger sayfadaki butun yazi ve seillere atama yapmak istersek; <br>
+<strong>*</strong> kullaniyoruz. <br><br>
+
+yazi stilini degistirmek istersek; <br>
+<strong>font-family: Arial/L ato</strong> <br><br>
+
+Eger farkli bir stil kullanmak istersek; <br>
+google - google fonts- üstte deneme yyazisi yazilabilir- sectigin yaziya tikla-
+bu stili sec- sagdaki acilan menuden -link i kopyala- head in icine en üste ekle. <br>
+font-familie olarak sagdaki kisimdan css alanini kopyala. <br><br>
+
+eger bir özelligi birden cok elemente vereceksek, <br>
+<strong>h1,h2,h3 { <br>
+    font-family: Arial;
+}</strong>
+
+<hr>
+Bütün bu css kodlarini <strong>style.css</strong> dosyasina da kaydedebiliriz. <br>
+Eger ayni konumda ise; <br>
+<strong>&lt;link href="style.css" rel="stylesheet"></strong> <br>
+head kisminin icine en altina yaziyoruz.
 
 
 
