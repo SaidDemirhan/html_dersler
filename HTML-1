@@ -46,16 +46,28 @@
     <h2>html Tagi</h2>
     &lt;html lang="de"> <br>
     dilin hangisi olmasi istenirse kisaltilarak yazilir. <br>
+
     <h2>meta Taglari</h2>
     &lt;meta charset="utf-8"> <br>
     neredeyse tüm dünya dillerindeki karakterleri barindirir. <br><br>
+
     &lt;meta name="robots" content="index,follow"> <br>
     Tüm arama motorlarina sayfayi takip etmelerini söyler. <br>
     Yalnizca Google'a hitap etmek istiyorsaniz, name="googlebot" yazarsiniz. <br>
     Bir sayfanin indexlenmesini ve takip edilmesini istemiyorsaniz aşağidakileri yazabilirsiniz: <br>
     &lt;meta name="robots" content="noindex,nofollow"> <br><br>
+    
     &lt;meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160."> <br>
-    web sitesinin meta açiklamasidir. Bu, Google arama sonuçlarinda başlikla birlikte görüntülenir. <br>
+    web sitesinin meta açiklamasidir. Bu, Google arama sonuçlarinda başlikla birlikte 
+    görüntülenir. <br><br>
+    
+    &lt;meta name="keywords" content="icerik1, icerik2, icerik3">
+    internet aramalarinda sitenizdeönemli kelimelerin cikmasi icin kullanilir. <br>
+    Türkce karakterler kullanmayiniz. <br><br>
+
+    &lt;meta name="author" content="Said Demirhan" <br>
+    site sahibini ifade eder. <br> <br>
+
     <h2>Özel karakterler</h2>
     (Boşluk)	Boşluk vermeye yarar.	&amp;nbsp; <br>
 &lt;	Küçüktür işareti:	&amp;lt; <br>
@@ -87,10 +99,16 @@ metni digerlerinden dah akücük yazdirir. <small>Örnek</small> <br><br>
 alt olarak yazdirir. H<sub>2</sub>O<br><br>
 
 &lt;u> <br>
-alti cizili  olarak yazdirir. <u>alti cizili</u> <br><br>
+&lt;ins> <br>
+alti cizili  olarak yazdirir. <ins>alti cizili</ins> <br><br>
 
 &lt;mark> <br>
-fosforlu kalemle cizer. <mark>sari isaretli</mark>
+fosforlu kalemle cizer. <mark>sari isaretli</mark> <br><br>
+
+
+
+&lt;del> <br>
+üzerine cizgi cekilmis sekilde yazdirir. <del>gecersiz</del>
 
 
 
@@ -114,9 +132,10 @@ fosforlu kalemle cizer. <mark>sari isaretli</mark>
 &lt;h6>Headline der Größe 6&lt;/h6>
 <h6>Headline der Größe 6</h6> <br>
 
-&lt;br> <br> alt satira gecmek icin kullanilir. <br><br>
+&lt;br> <br> alt satira gecmek icin kullanilir. <br>
+&lt;br /> <br> alt satira gecerken daha fazla bosluk biraktiracaktir.<br><br>
 
-&lt;hr> cizgi cekmek icin kullanilir. <hr> <br><br>
+&lt;hr> veya &lt;hr /> cizgi cekmek icin kullanilir. <hr> <br><br>
 
 &lt;!-- --> yorum yapmak icin kullanilir. <br><br>
 
@@ -127,6 +146,18 @@ fosforlu kalemle cizer. <mark>sari isaretli</mark>
     ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. 
 &lt;/p> <br>
 paragraf yapmak icin kullanilir. <br><br>
+
+&lt;pre> <br>
+Alinti yaptigimiz yazi veya siirin bozlmadan ayni sekilde kalmasini saglar. 
+<pre>
+Korkma, sönmez bu safaklarda yüzen al sancak;
+Sönmeden yurdumun üstünde tüten en son ocak.
+O benim milletimin yildizidir, parlayacak;
+O benimdir, o benim milletimindir ancak.
+</pre>
+
+
+
 
 <h2>Liste Olusturma</h2>
 
@@ -150,7 +181,15 @@ paragraf yapmak icin kullanilir. <br><br>
    </li>  
    <li>Käse</li>
    <li>Saft</li>
-</ul>
+</ul> <br>
+
+Eger madde isaretlerini degistirmek istersek; <br>
+<strong>&lt;ul type="circle"></strong> atributu ekleyebiliriz. <br>
+circle: ici bos yuvarlak <br>
+square: ici dolu kare <br>
+none: simgeleri kaldirmak icin yazilir. <br>
+
+
 &lt;ol> <br>
     &nbsp;&lt;li>&nbsp;&lt;/li> <br>
 &lt;/ol> <br>
@@ -168,7 +207,8 @@ paragraf yapmak icin kullanilir. <br><br>
 </ol>
 
 <strong>value</strong> attributlariyla sira belirlenebilir <br>
-<strong>start</strong> atributuyla kactan baslayacagi belirlenebilir. <br><br>
+<strong>start</strong> atributuyla kactan baslayacagi belirlenebilir. <br>
+<strong>type</strong> atributuyla 1, A, a, I, i seklinde siralanabilir.<br><br>
 
 &lt;dl> <br>
     &nbsp;&lt;dt>&nbsp;&lt;/dt> <br>
@@ -263,9 +303,12 @@ ayrica bas kismin vurgulu görünmesi istenirse td yerine <strong>&lt;th></stron
     eger tablo genisligini degistirmek istersek; <br>
     &lt;table width="50%"> <br>
     bu sekilde ekranin yarisini kaplamis olur.
+
+
 <h2>Hyperlinks</h2>
 <h3>ayri bir sayfa</h3>
-&lt;a> Tagi kullanilarak olusturulur. <br>
+&lt;a> Tagi kullanilarak olusturulur. <br><br>
+eger link olarak bir yere gitmesi istenmiyorsa adres yerine <mark>#</mark> yazilmalidir. <br><br>
 &lt;a href="https://amazon.de">Amazon a gitmek icin tiklayiniz&lt;/a> <br>
 <a href="https://amazon.de" target="new">Amazon a gitmek icin tiklayiniz</a> <br><br>
 <strong>target="_blank"</strong> ayri bir sekmede acmak icin kullanilan atributtur. <br>
@@ -273,7 +316,10 @@ ayrica bas kismin vurgulu görünmesi istenirse td yerine <strong>&lt;th></stron
  acmak icin kullanilan atributtur.
 &lt;a href="https://amazon.de" target="_blank"> <br>
 <strong>mailto:</strong>, mail göndermek icin kullanilir. <br>
-&lt;a href="mailto:said@gmail.com">bana ulasin&lt;/a> <br>
+&lt;a href="mailto:said@gmail.com">bana ulasin&lt;/a> <br><br>
+
+Linklere ayni zamanda <strong>title=""</strong> atributu da verebiliriz, <br>
+bu sayede maus ile üzerine gelindiginde aciklama cikacaktir.
 
 <h3>ayni sayfa icinde</h3>
 gidilmek istenilen Tag a bir <strong>id</strong> verilmeli. <br>
@@ -435,28 +481,40 @@ yazinin oldugu kadar alan kaplar <br>
 &lt;span style="background-color: green;">yazi alani&lt;/span> <br>
 <span style="background-color: green;">yazi alani</span>
 
+<hr>
 <h2>Form olusturma</h2>
 Mutlaka <strong>form</strong> etiketinin icinde olmalidir. <br><br>
 &lt;form action="https://amazon.de" method="get"><br>
 &lt;div><br>
-&lt;label for="">Isim giriniz&lt;/label><br>
-&lt;input type="text" name="isim"><br>
+&lt;label for="ad">Isim giriniz&lt;/label><br>
+&lt;input type="text" name="isim" id="ad"><br>
 &lt;/div><br>
 &lt;div><br>
 &lt;label for="">Mail giriniz&lt;/label><br>
-&lt;input type="email" name="email"> <br>
+&lt;input type="email" name="email" placeholder="isim"> <br>
 &lt;/div> <br>
 &lt;button type="submit">Gönder&lt;/button> <br>
 &lt;Input type="submit" value="Gönder">&lt;/Input> <br>
 &lt;/form> <br><br>
+
+eger label deki <strong>for</strong> atributu ile inputtaki <strong>id</strong> ayni ada sahipse 
+label in icinde yazan yaziya da tiklandiginda input AKTIF olur. <br><br>
+
+<strong>name</strong> atributu <strong>action</strong> atributunda yazilan adrese giden bilginin 
+ayrintisini göstermektedir. <br><br>
+
 eger form daki method yerine <strong>get</strong> yazilirsa bilgiler görünerek gider. <strong>post</strong>
-yazilirsa gizliden gider.
+yazilirsa gizliden gider. <br><br>
+
 buton input veya button olarak iki türlü de olusturulabilir. <br><br>
+
+Eger yazi kutusunun icinde bizden istenilen bilgi yazsin denilirse; <br>
+<strong>placeholder=""</strong> atributu kullanilmalidir.
 
 <form action="https://amazon.de" method="get">
     <div>
-        <label for="">Isim giriniz</label>
-        <input type="text" name="isim">
+        <label for="ad">Isim giriniz</label>
+        <input type="text" name="isim" placeholder="isim" id="ad">
     </div>
     <div>
         <label for="">Mail giriniz</label>
@@ -474,6 +532,11 @@ sifre icin input type <strong>password</strong> olmali <br> <br>
     <label for="">Mail giriniz</label>
     <input type="password"> 
 </div> <br>
+
+girilen bilgilerin sifirlanmasi ve silinmesi icin;  <br>
+&lt;input type="reset" value="temizle">  veya<br>
+&lt;button type="reset">temizle</button> <br>
+<input type="reset" value="temizle"> <br><br>
 
 cinsiyet icin type <strong>radio</strong> olmali, eger tek bir secim yapilmasi gerekiyorsa;<br>
 <strong>name</strong>ler ayni olmalidir. <br><br>
@@ -576,7 +639,11 @@ eger ayni kücülme islemi resimde olursa <br>
 width: 100%;</strong> <br><br>
 
 eger bir cercevenin icindeki elemenleri yan yana istersek; <br>
-<strong>display: flex;</strong> <br><br>
+<strong>display: flex;</strong> (display: inline da olabiliyor.) <br>
+Block elementlerin default olarak display: block; seklinde oldugunu hatirlayalim. <br><br>
+
+<strong>UYARI:</strong> yalnizca block elementlere width ve height  verilebilir, 
+inline elementlere VERILEMEZ!! <br><br>
 
 eger sayfadaki butun yazi ve seillere atama yapmak istersek; <br>
 <strong>*</strong> kullaniyoruz. <br><br>
@@ -593,6 +660,13 @@ eger bir özelligi birden cok elemente vereceksek, <br>
 <strong>h1,h2,h3 { <br>
     font-family: Arial;
 }</strong>
+<hr>
+Bir elementin birden cok <strong>class</strong> i ve bir adet <strong>id</strong> i olabilir. <br>
+&lt;div class="navbar-menu flex1 alt" id="navbar">
+
+<strong>BILGI</strong> Bir sayfada bir elementin ID i varsa link in sonuna 
+<strong>#id-adi</strong> yazilirsa direkt olarak oraya gider.
+
 
 <hr>
 Bütün bu css kodlarini <strong>style.css</strong> dosyasina da kaydedebiliriz. <br>
