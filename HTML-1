@@ -327,20 +327,21 @@ eger baska bir html ile bag kurulacaksa; <br>
 <hr>
 
 <h2>resim ekleme</h2>
-<strong>img</strong> kapatmaya gerek yoktur.
-&lt;img src="resim linki" alt="görünmeyen aciklama" title="görünen aciklama#10;"> <br>
-<img src="img\essen_3.jpg" alt="papatyalar uzerinde ucan acik mavi kelebek" title="kelebek #10; ve Papatya">
+<strong>img</strong> kapatmaya gerek yoktur. <br>
+&lt;img src="resim linki" alt="görünmeyen aciklama" title="görünen aciklama&amp;#10;"> <br><br>
+<img src="img\essen_3.jpg" alt="papatyalar uzerinde ucan acik mavi kelebek" 
+title="kelebek #10; ve Papatya">
 <br><br>
 <strong>alt</strong> atributu; <br>
 <ul>
-    <li>resim yoklenemediginde</li>
+    <li>resim yüklenemediginde</li>
     <li>görme engelliler icin ekran okuyuculari tafindan okunmasi icin</li>
     <li>google in daha iyi resmi anlayip siniflayabilmesi icin gereklidir.</li>
-</ul> <br><br>
+</ul> <br>
 
 <strong>title</strong> atributu; <br>
 resmin üzerine gelindiginde istenilen aciklamanin cikmasi icin yazilir. <br>
-eger yazinin yatay uzamasini istemiyorsak <strong>#10;</strong> yazarak alt satira gecilir. <br><br>
+eger yazinin yatay uzamasini istemiyorsak <strong>&amp;#10;</strong> yazarak alt satira gecilir. <br><br>
 
 Eger altina yazi eklemek istersek; <br>
 &lt;figure> <br>
@@ -377,7 +378,44 @@ gerekli alani kaplamaya baslar <br>
 <strong>poster="img/poster.jpg"</strong> videoda görünmesi istenilen resim ilk olarak görünür. <br><br>
 <video controls preload width="400px">
     <source src="media\interdiction-death-to-our-leaders.mp4" type="video/mp4">
-</video>
+</video> <br><br>
+html 5 ile sadece <strong>&lt;video src=""></strong> Elementi ile de artik calismaktadir. <br><br>
+
+<h3>Youtube videosu ekleme</h3>
+yutuba gir - paylas de- yerlestir e bas-  alttakileri isaretle<br>
+<div>
+    <div>
+        <input type="checkbox" name="b" value="a"> <span>Player-Steuerelemente anzeigen.</span>
+    </div>
+    <div>
+        <input type="checkbox" name="b" value="c"> <span>Erweiterten Datenschutzmodus aktivieren.</span>
+    </div>
+</div>
+kopyala- istedigin yere <strong>iframe</strong> olarak yapistir. <br><br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u4wyRgRiiUU" 
+title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br>
+
+<h3>iframe  olarak baska internet sayfasi ekleme</h3>
+&lt;iframe id="iramesize" src="https://google.com" frameborder="0" width="400px">&lt;/iframe> <br>
+ama her web sitesi kendi sayfasinin kullanilmasini istemeyebilir. <br> <br>
+<iframe id="iramesize" src="https://google.com" frameborder="0" width="400px"></iframe>
+
+<h2>Ses ekleme</h2>
+&lt;audio controls> <br>
+&lt;source src="media\painful-passion.mp3" type="audio/mpeg"> <br>
+&lt;source src="media\painful-passion.ogg" type="audio/ogg">
+&lt;/audio> <br>
+
+video daki atributlarin neredeyse tamami burada da gecerlidir. <br><br>
+<audio controls>
+    <source src="media\painful-passion.mp3" type="audio/mpeg">
+    <source src="media\painful-passion.ogg" type="audio/ogg">
+</audio> <br><br>
+
+html 5 ile artik <strong>&lt;audio src=""></strong> Elementi ile de artik calismaktadir. <br><br>
+<audio src="media\painful-passion.mp3" controls>Müzik</audio>
 <h2>Buton olusturma</h2>
 &lt;button>TIKLA&lt;/button> <br>
 <button>TIKLA</button> <br><br>
