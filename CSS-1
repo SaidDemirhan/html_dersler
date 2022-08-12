@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Notlari</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>flex-direction</h2>
+    <ul>
+        <li><strong>flex-direction: row;</strong> <br>
+        default özelliktir satirda soldan baslayarak elementleri siralar.</li>
+        <li><strong>flex-direction: row-reverse;</strong><br>
+        Sola dayayarak siralar</li>
+        <li><strong>flex-direction:column;</strong><br>
+        sol üstten baslayarak asagiya dogru siralar</li>
+        <li><strong>flex-direction:column-reverse;</strong><br>
+        tersten yukariya dogru sola dayali siralar.</li>
+    </ul> 
+    <h2>flex-wrap</h2>
+    <ul>
+        <li><strong>flex-wrap: nowrap;</strong><br>
+        hicbir zaman elementler ikinci satira inmesin.</li>
+        <li><strong>flex-wrap: wrap</strong><br>
+        gerektiginde ikinci ve alt satirlara inebilir.</li>
+        <li><strong>flex-wrap: wrap-reverse</strong><br>
+        tersten baslayarak siralar.</li>
+    </ul>
+    <h2>align-items</h2>
+    <ul>
+        <li><strong>align-items: flex-start;</strong><br>
+        dikey olarak üstten hizalar</li>
+        <li><strong>align-items: flex-end;</strong><br>
+        en alta yapistirir</li>
+        <li><strong>align-items: center;</strong><br>
+        sayfa ortasina hizalar</li>
+        <li><strong>align-items: baseline;</strong><br>
+        yazi karakterlerini esas alarak elementleri ortala</li>
+        <li><strong>align-items: stretch;</strong><br>
+        varsayilan özelliktir.</li>
+    </ul>
+
+<h2>justify-content</h2>
+<ul>
+    <li><strong>justify-content: flex-start;</strong><br>
+    yatay olarak hizalamayi yapar, soldan baslar.</li>
+    <li><strong>justify-content: flex-end;</strong><br>
+    sagdan baslar</li>
+    <li><strong>justify-content: center;</strong><br>
+    ortadan baslar</li>
+    <li><strong>justify-content: space-between;</strong><br>
+    kenarlara daya ama esit dagit</li>
+    <li><strong>justify-content: space-around;</strong><br>
+    her kutu ve henar arasinda ayni boslugu birak.</li>
+</ul>
+
+<h2>align-content</h2>
+<ul>
+    <li><strong>align-content: flex-start;</strong><br>
+    birden fazla satirda elemanlarin nasil yerlestirilecegini ayarlamak icin 
+    sol üstten baslayarak elementleri siralar.</li>
+    <li><strong>align-content: flex-end;</strong><br></li>
+    <li><strong>align-content: center;</strong><br></li>
+    <li><strong>align-content: space-between;</strong><br></li>
+    <li><strong>align-content: space-around;</strong><br></li>
+    <li><strong>align-content: stretch;</strong><br></li>
+</ul>
+
+<h2>align-self</h2>
+    <ul>
+        <li><strong>align-self: auto;</strong><br>
+        icindeki bir elementin pozisyonunu ayarlar</li>
+        <li><strong>align-self: flex-start;</strong><br>
+        dikey olarak üstten hizalar</li>
+        <li><strong>align-self: flex-end;</strong><br>
+        en alta yapistirir</li>
+        <li><strong>align-self: center;</strong><br>
+        sayfa ortasina hizalar</li>
+        <li><strong>align-self: baseline;</strong><br>
+        yazi karakterlerini esas alarak elementleri ortala</li>
+        <li><strong>align-self: stretch;</strong><br>
+        varsayilan özelliktir.</li>
+    </ul>
+<h2>flex-grow</h2>
+Eger elemenlerin satirinda bosluk varsa bunu degerlendir ve büyüyerek o yeri kapla <br>
+<strong>flex-grow: 1;</strong> <br>
+eger ayni satirdaki iki veya daha fazla element e grow ozelligi vermek istersek degisik 
+sayilarla kalan yeri paylasabilirler. 5 3 gibi <br>
+
+<h2>order</h2>
+her elementin default degeri 0(sifir) oldugu icin eger -1 dersek denilen element ilk
+siraya yerlesir. <br>
+<strong>order: -1;</strong> <br>
+
+<h2>flex-shrink</h2>
+Elementin kapsadigi alanin hicbir zaman kücülmesini ve bozulmasini istemiyorsak kullaniriz. <br>
+<strong>flex-shrink: 0;</strong> <br>
+her elementin varsayilan degeri 1 oldugu icin sayfayi kücültursek sekiller bozulabilir. <br>
+
+<hr>
+
+<h2>extra bilgiler</h2>
+
+<strong>position: relative;</strong> icine yerlestirilen tüm elemanlari absolut da olsa icinde tutar <br><br>
+
+<strong>position: absolute</strong> her zaman sabit yerde  kalmasi icin kullanilir.
+
+<strong>width: calc(50% - 20px)</strong> genisligin ekranin yarisini kaplasin ancak ekran kenarindan da 
+20px lik yer birakmayi unutma!
+
+<hr>
+
+<strong>font-size: 21px;</strong> <br>
+yazi büyüklügünü ayarlar <br><br>
+
+<strong>font-family: Arial, Helvetica, sans-serif;</strong> <br>
+yazi fontu tarzini belirler. <br><br>
+
+<strong>font-style: italic;</strong> <br>
+yazi tarzini belirler. <br><br>
+
+<strong>font-weight: bold/100/900;</strong> <br>
+yazi kalinligini ayarlamak icin kullanilir. <br><br>
+
+<strong>text-transform: uppercase/lowercase/capitalize/none;</strong> <br>
+harf büyüklügünü ayarlamak icin kullanilir. <br>
+büyük/kücük/ilk harfler büyük <br><br>
+
+<strong>font-variant:small-caps;</strong><br>
+büyük hafleri biraz daha büyük yazar digerlerini de büüyk harfe cevirir. <br><br>
+
+<strong>letter-spacing: 10px;</strong><br>
+harfler arasindaki boslugu acar veya kapatir <br><br>
+
+<strong>word-spacing: 20px;</strong><br>
+kelimeler arasindaki boslugu ayarlar. <br><br>
+
+<strong>text-decoration: underline/none;</strong> <br>
+kelime altina ustune vs cizgi icin kullanilir. <br><br>
+
+Eger kodlari duzenli hale getirmek istersek css decompresor  olarak aratabiliriz. <br><br>
+
+<strong>text-shadow: 3px 3px 6px black;</strong> <br>
+<a href="https://html-css-js.com/css/generator/text-shadow/"> 
+https://html-css-js.com/css/generator/text-shadow/</a> sitesinden hazir kodlar bulunabilir. <br>
+ilk deger yatay ikinci deger dikey, 3. deger gölge miktari, dördüncüsü ise renktir. <br><br>
+
+eger renk cesitlerini görmek istersek; <br>
+<a href="https://www.mediaevent.de/css-text-mit-verlauf-fuellen/">
+    https://www.mediaevent.de/css-text-mit-verlauf-fuellen/</a> ya da <br>
+    <a href="https://fossheim.io/writing/posts/css-text-gradient/">
+        https://fossheim.io/writing/posts/css-text-gradient/</a>  <br><br>
+
+<strong>text-align: center/left/right/justify;</strong>   <br>
+metin yönünü ayarlamak icin kullanilir.     
+
+<strong>margin: 0 auto</strong> <br>
+ilk deger yukari asagisi, ikinci deger sag sol oluyor. <br>
+normalde saat kadrani gibi hesaplanir 4 adet deger oldugunda. ust sag alt sol <br>
+top/bottom/right/left <br><br>
+
+En distaki, yani tüm div'leri iceren CSS ID'mizin adi <strong>wrapper</strong>.
+
+
+<hr>
+
+<strong>float: right/left/inherit/none;</strong>
+block elementleri istenilen sekilde hareket ettirebilmek icin kullaniriz. <br>
+sonraki elementler float li olan elemenin altina girecektir. <br>
+onun önüne gecmek ve öncesini yok saymak icin ise <strong>clear: left;</strong> kullanmaliyiz<br>
+istersek yeni bir plok elementi olusturup css kismindan ona <strong>clear: both;</strong>
+özelligi de verebiliriz. bu sekilde öncesi sifirlanmis olur. <br>
+ Sonrasinda istersek yeniden yine float lara devam ederiz. <br><br>
+
+<h3>box-sizing</h3>
+<ul>
+    <li><strong>box-sizing: border-box;</strong><br>
+    padding ve border degerleri width - height degerini degistirmeyecektir</li>
+    <li><strong>box-sizing: content-box;</strong><br>
+    padding ve border degerleri (verilmisse) width - height degerini etkileyecektir.(default)</li>
+</ul>
+
+
+artikel asside header section footer nav 
+
+</body>
+</html>
