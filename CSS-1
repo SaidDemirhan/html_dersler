@@ -185,5 +185,57 @@ istersek yeni bir plok elementi olusturup css kismindan ona <strong>clear: both;
 
 artikel asside header section footer nav 
 
+<strong>line-height: 150px;</strong> <br>
+satir arasindaki  bosluklari acar. <br><br>
+
+<hr>
+
+<h2>Grid</h2>
+<p>grid icin öncelikle margin ve paddig i SIFIRLAMAK gerekir. <br>
+box-sizing: border-box yapip yapilandirmaya baslanabilir.</p>
+
+<p>bir Conteiner olusturup icindeki satir ve sutun sayisini belirlemeliyiz.</p>
+<strong>display: grid</strong> <br>
+sayfanin grid yapisina göre dizayna edilecegini belirtir. <br><br>
+<strong>grid-template-rows: 200px 200px;</strong><br>
+iki satirdan olusan bir grid yapisini ifade eder. <br><br>
+<strong>grid-template-columns: 200px 200px 200px;</strong><br>
+3 sütunluk bir grid yapisi olusturur. <br><br>
+<strong>grid-template: 200px 200px / 100px 100px 100px;</strong><br>
+hem satir hem sütun a ayni anda olusturabilirz.
+<strong>grid-auto-rows: 200px;</strong> eger satirlara sigmayan hücre olursa alt satirda görünmesini saglar <br><br>
+<strong>1fr</strong> seklinde sütün genisligi kullanirsak fr adedinceesit sütunlara bölünür. <br>
+<strong>grid-template: repeat(2,100px)/1fr 1fr 1fr;</strong> bu sekilde de satir sütün 
+olusturulabilir. <br><br>
+<strong>row-gap: 10px;</strong> satirlar arasi boslugu ifade eder. <br><br>
+<strong>column-gap: 10px;</strong> sütunlar arasi boslugu ifade eder <br><br>
+<strong>gap: 10px</strong> eger hem sütunda hem de satir aralarinda bosluk istenirse kullanilir. <br><br>
+<strong>grid-column-start: 2;</strong> <br>
+<strong>grid-column-end: 3;</strong> <br>
+hücrelere yazilmasi gereken bir özelliktir ve hangi sütunda hücrenin baslayip bitecegini belirler <br> <br>
+<strong>grid-column: span 2;</strong> hucrenin 2 birimlik yer kaplayacagini anlatir. <br><br>
+<strong>grid-row: 1/3;</strong> <br>
+<strong>grid-column: 1/4;</strong> diyerek hücrenin kapsayacagi alan belirlenebilir. <br>
+birinci cizgiden baslar ve 4. cizgide hücre sona erecektir. <br><br>
+<strong>grid-area: header;</strong> ile hücrelere isim verilir. <br>
+<strong>grid-template-areas: "header nav aside" <br>
+    "menu artikel aside" <br>
+    "footer footer footer" </strong> <br>
+    hücreleri isimlendirdikten sonra hangi alana hangi hücrenin gelecegi ayarlanir  <br><br> 
+<p>Eger hücre icindeki yaziyi ortalamak istersek:
+    <ul>
+        <li><strong>display: grid;</strong> ile hücrenin grid te oldugunu bildir.</li>
+        <li><strong>align-items : center;</strong> ile asagiya cek(ama solda kalir)</li>
+        <li><strong>justify-items: center;</strong> ile soldan ortaya cek.</li>
+    </ul>
+</p>    
+
+
+
+
+
+
+
+
 </body>
 </html>
