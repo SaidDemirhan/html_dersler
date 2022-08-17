@@ -4,111 +4,809 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Notlari</title>
+    <title>HTML Notlari</title>
 </head>
+<style>
+    html{
+        scroll-behavior:smooth;
+    }
+    table,td{
+        border: 1px solid black;
+        border-collapse: collapse; 
+        padding: 6px;
+    }
+    tfoot{
+        background: #c9c9c9;
+    }
+    thead{
+        background: hotpink;
+    }
+    tbody{
+        background: rgb(177, 227, 208);
+    }
+    #kelime{
+        background: pink;
+    }
+    
+</style>
 <body>
-    <h1>Flexbox</h1>
-    <h2>flex-direction</h2>
-    <ul>
-        <li><strong>flex-direction: row;</strong> <br>
-        default özelliktir satirda soldan baslayarak elementleri siralar.</li>
-        <li><strong>flex-direction: row-reverse;</strong><br>
-        Sola dayayarak siralar</li>
-        <li><strong>flex-direction:column;</strong><br>
-        sol üstten baslayarak asagiya dogru siralar</li>
-        <li><strong>flex-direction:column-reverse;</strong><br>
-        tersten yukariya dogru sola dayali siralar.</li>
-    </ul> 
-    <h2>flex-wrap</h2>
-    <ul>
-        <li><strong>flex-wrap: nowrap;</strong><br>
-        hicbir zaman elementler ikinci satira inmesin.</li>
-        <li><strong>flex-wrap: wrap</strong><br>
-        gerektiginde ikinci ve alt satirlara inebilir.</li>
-        <li><strong>flex-wrap: wrap-reverse</strong><br>
-        tersten baslayarak siralar.</li>
-    </ul>
-    <h2>align-items</h2>
-    <ul>
-        <li><strong>align-items: flex-start;</strong><br>
-        dikey olarak üstten hizalar</li>
-        <li><strong>align-items: flex-end;</strong><br>
-        en alta yapistirir</li>
-        <li><strong>align-items: center;</strong><br>
-        sayfa ortasina hizalar</li>
-        <li><strong>align-items: baseline;</strong><br>
-        yazi karakterlerini esas alarak elementleri ortala</li>
-        <li><strong>align-items: stretch;</strong><br>
-        varsayilan özelliktir.</li>
-    </ul>
+    <h1>HTML Notlari</h1>
+    <h2>Örnek bir template görünümü</h2>
+    &lt;html lang="de"> <br>
+    &lt;head> <br>
+    &lt;meta charset="utf-8"> <br>
+    &lt;meta name="robots" content="index,follow"> <br>
+    &lt;title>Mein Website Template&lt;/title> <br>
+    &lt;meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160.">
+    &lt;/head> <br>
+    &lt;body> <br>
+    Das ist der eigentlich Inhalt der Website
+    &lt;/body> <br>
+    &lt;/html> <br>
+    <h2>html Tagi</h2>
+    &lt;html lang="de"> <br>
+    dilin hangisi olmasi istenirse kisaltilarak yazilir. <br>
 
-<h2>justify-content</h2>
+    <h2>meta Taglari</h2>
+    &lt;meta charset="utf-8"> <br>
+    neredeyse tüm dünya dillerindeki karakterleri barindirir. <br><br>
+
+    &lt;meta name="robots" content="index,follow"> <br>
+    Tüm arama motorlarina sayfayi takip etmelerini söyler. <br>
+    Yalnizca Google'a hitap etmek istiyorsaniz, name="googlebot" yazarsiniz. <br>
+    Bir sayfanin indexlenmesini ve takip edilmesini istemiyorsaniz aşağidakileri yazabilirsiniz: <br>
+    &lt;meta name="robots" content="noindex,nofollow"> <br><br>
+    
+    &lt;meta name="description" content="Hier kommt die Beschreibung der jeweiligen Website rein. Optimal sind 150 - 155 Zeichen. Das Maximum liegt 160."> <br>
+    web sitesinin meta açiklamasidir. Bu, Google arama sonuçlarinda başlikla birlikte 
+    görüntülenir. <br><br>
+    
+    &lt;meta name="keywords" content="icerik1, icerik2, icerik3">
+    internet aramalarinda sitenizdeönemli kelimelerin cikmasi icin kullanilir. <br>
+    Türkce karakterler kullanmayiniz. <br><br>
+
+    &lt;meta name="author" content="Said Demirhan" <br>
+    site sahibini ifade eder. <br> <br>
+
+    <h2>Özel karakterler</h2>
+    (Boşluk)	Boşluk vermeye yarar.	&amp;nbsp; <br>
+&lt;	Küçüktür işareti:	&amp;lt; <br>
+&gt;	Büyüktür işareti:	&amp;gt; <br>
+&amp;	Ve işareti:	&amp;amp; <br>
+&quot;	Tirnak:	&amp;quot; <br>
+&#39;	Ayiraç:	&amp;#39; <br>
+&amp;#9986; = &#9986; <br>
+&amp;copy; = &copy; <br>
+&amp;9992; = &#9992; <br>
+&amp;euro; = &euro; <br>
+<h2>Yazi Stilleri</h2>
+&lt;b> <br>
+&lt;strong> <br>
+Mantiksal (semantik) anlamsal vurgulama. Güçlü metin vurgu ve önem ile vurgulanir. <br>
+Daha çok görme engellilerin ekran okuyuculari için ve Google tarafindan daha önemli kabul ediliyor. <strong>Örnek</strong> <br><br>
+
+&lt;i> <br>
+&lt;em> <br>
+italik yazar vurgu manasina gelir. özellikle görme engelliler ve ekran okuyuculari icin önemlidir. <em>Örnek</em> <br><br>
+
+&lt;small> <br>
+metni digerlerinden dah akücük yazdirir. <small>Örnek</small> <br><br>
+
+&lt;sup> <br>
+üs olarak yazdirir. 100<sup>3</sup><br><br>
+
+&lt;sub> <br>
+alt olarak yazdirir. H<sub>2</sub>O<br><br>
+
+&lt;u> <br>
+&lt;ins> <br>
+alti cizili  olarak yazdirir. <ins>alti cizili</ins> <br><br>
+
+&lt;mark> <br>
+fosforlu kalemle cizer. <mark>sari isaretli</mark> <br><br>
+
+
+
+&lt;del> <br>
+üzerine cizgi cekilmis sekilde yazdirir. <del>gecersiz</del>
+
+
+
+<h2>Paragraflar</h2>
+
+&lt;h1>Headline der Größe 1&lt;/h1>
+<h1>Headline der Größe 1</h1>
+      
+&lt;h2>Headline der Größe 2&lt;/h2>
+<h2>Headline der Größe 2</h2>
+
+&lt;h3>Headline der Größe 3&lt;/h3>
+<h3>Headline der Größe 3</h3>
+
+&lt;h4>Headline der Größe 4&lt;/h4>
+<h4>Headline der Größe 4</h4>
+
+&lt;h5>Headline der Größe 5&lt;/h5>
+<h5>Headline der Größe 5</h5>
+
+&lt;h6>Headline der Größe 6&lt;/h6>
+<h6>Headline der Größe 6</h6> <br>
+
+&lt;br> <br> alt satira gecmek icin kullanilir. <br>
+&lt;br /> <br> alt satira gecerken daha fazla bosluk biraktiracaktir.<br><br>
+
+&lt;hr> veya &lt;hr /> cizgi cekmek icin kullanilir. <hr> <br><br>
+
+&lt;!-- --> yorum yapmak icin kullanilir. <br><br>
+
+&lt;p>
+    Ich werde hier noch die Stellung halten, bis der geplante Text eintrifft. Ich wünsche Ihnen noch einen schönen Tag. Und arbeiten Sie nicht zuviel! 
+    Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein 
+    und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders »Lorem Ipsum«, freue 
+    ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. 
+&lt;/p> <br>
+paragraf yapmak icin kullanilir. <br><br>
+
+&lt;pre> <br>
+Alinti yaptigimiz yazi veya siirin bozlmadan ayni sekilde kalmasini saglar. 
+<pre>
+Korkma, sönmez bu safaklarda yüzen al sancak;
+Sönmeden yurdumun üstünde tüten en son ocak.
+O benim milletimin yildizidir, parlayacak;
+O benimdir, o benim milletimindir ancak.
+</pre>
+
+
+
+
+<h2>Liste Olusturma</h2>
+
+&lt;ul> <br>
+    &nbsp;&lt;li>Wurst <br>
+        &nbsp;&nbsp;&lt;ul> <br>
+            &nbsp;&nbsp;&nbsp;&lt;li>Mettwurst&lt;/li> <br>
+            &nbsp;&nbsp;&lt;&nbsp;li>Salami&lt;/li> <br>
+        &nbsp;&nbsp;&lt;/ul> <br>
+    &nbsp;&lt;/li>   <br>
+    &nbsp;&lt;li>Käse&lt;/li> <br>
+    &nbsp;&lt;li>Saft&lt;/li> <br>
+    &nbsp;&lt;/ul> <br>
+
 <ul>
-    <li><strong>justify-content: flex-start;</strong><br>
-    yatay olarak hizalamayi yapar, soldan baslar.</li>
-    <li><strong>justify-content: flex-end;</strong><br>
-    sagdan baslar</li>
-    <li><strong>justify-content: center;</strong><br>
-    ortadan baslar</li>
-    <li><strong>justify-content: space-between;</strong><br>
-    kenarlara daya ama esit dagit</li>
-    <li><strong>justify-content: space-around;</strong><br>
-    her kutu ve henar arasinda ayni boslugu birak.</li>
+    <li>Wurst
+       <ul>
+           <li>Mettwurst</li>
+           <li>Salami</li>
+       </ul>
+   </li>  
+   <li>Käse</li>
+   <li>Saft</li>
+</ul> <br>
+
+Eger madde isaretlerini degistirmek istersek; <br>
+<strong>&lt;ul type="circle"></strong> atributu ekleyebiliriz. <br>
+circle: ici bos yuvarlak <br>
+square: ici dolu kare <br>
+none: simgeleri kaldirmak icin yazilir. <br>
+
+
+&lt;ol> <br>
+    &nbsp;&lt;li>&nbsp;&lt;/li> <br>
+&lt;/ol> <br>
+<ol>
+    <li>Bayern Müncen
+        <ul>
+            <li>1992</li>
+            <li>2001</li>
+        </ul>
+    </li>
+    <li>Herta Berlin <br> Schalke 04</li>
+    <li value="4">LB Leipzig</li>
+    <li value="4">Bayern Leverkusen</li>
+    <li>Borissia Dortmund</li>
+</ol>
+
+<strong>value</strong> attributlariyla sira belirlenebilir <br>
+<strong>start</strong> atributuyla kactan baslayacagi belirlenebilir. <br>
+<strong>type</strong> atributuyla 1, A, a, I, i seklinde siralanabilir.<br><br>
+
+&lt;dl> <br>
+    &nbsp;&lt;dt>&nbsp;&lt;/dt> <br>
+    &nbsp;&lt;dd>&nbsp;&lt;/dd> <br>
+&lt;/dl> <br>
+    
+<dl>
+    <dt>Harfler</dt>
+    <dd>b</dd>
+    <dd>c</dd>
+    <dt>sayilar</dt>
+    <dd>2</dd>
+    <dd>3</dd>
+</dl>
+
+<h2>Tabelalar</h2>
+&lt;table> <br>
+&lt;tr> <br>
+&lt;td>&lt;/td> <br>
+&lt;/tr> <br>
+&lt;/table> <br><br>
+<table>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+
+border="1" atributu eklenebilir ama yanlis olur <br>
+head ile body nin arasina style eklenip: <br>
+table,td{ <br>
+    border: 1px solid black; <br>
+    border-collapse: collapse; <br>
+    padding: 6px; <br>
+    } <br>
+    padding: tablonun icindeki yazinin cevresine uzakligini ayarlar <br>
+    border-collapse:ayri ayri cizgi olmasini engeller <br>
+    border: cizgi kalinligini, seklini ve rengini ayarlar <br><br>
+
+    <strong>colspan="2"</strong>:Satirdaki hücreleri birlestirir. Horizontal<br>
+    ama kesinlikle birlistirilince altta kalacak hücreleri sil. <br>
+    &lt;td colspan="2">&lt;/td> <br> <br>
+
+    <strong>rowspan="2"</strong>:Sütundaki hücreleri birlestirir. Vertikal<br>
+    ama kesinlikle birlistirilince sütundalardaki altta kalacak hücreleri sil. <br>
+    &lt;td rowspan="2">&lt;/td> <br> <br>
+    Ayrica asagidaki tabela bölümleri de kullanilabilir: <br>
+    &lt;thead> <br>
+    &lt;tbody> <br>
+    &lt;tfoot> <br><br>
+    arka plan icin styla kismina: <br>
+thead{ <br>
+    background: hotpink; <br>
+} <br> <br>
+
+ayrica bas kismin vurgulu görünmesi istenirse td yerine <strong>&lt;th></strong> kullanilmalidir. <br><br>
+<table>
+    <thead>
+        <tr>
+            <th>platz</th>
+            <th>mannschaft</th>
+            <th>punkte</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Fenerbahce</td>
+            <td>49</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Galatasayray</td>
+            <td>47</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="2">sampiyonlar ligi <br>avrupa ligi <br>konferans ligi</td>
+                <td>1<br>2 <br>3</td>
+            </tr>
+        </tfoot>
+    </tbody>
+</table>
+
+<br><br>
+    eger tablo genisligini degistirmek istersek; <br>
+    &lt;table width="50%"> <br>
+    bu sekilde ekranin yarisini kaplamis olur.
+
+
+<h2>Hyperlinks</h2>
+<h3>ayri bir sayfa</h3>
+&lt;a> Tagi kullanilarak olusturulur. <br><br>
+eger link olarak bir yere gitmesi istenmiyorsa adres yerine <mark>#</mark> yazilmalidir. <br><br>
+&lt;a href="https://amazon.de">Amazon a gitmek icin tiklayiniz&lt;/a> <br>
+<a href="https://amazon.de" target="new">Amazon a gitmek icin tiklayiniz</a> <br><br>
+<strong>target="_blank"</strong> ayri bir sekmede acmak icin kullanilan atributtur. <br>
+<strong>target="new"</strong> acilacak tüm sayfalari sadece diger sayfada veya sekmede
+ acmak icin kullanilan atributtur.
+&lt;a href="https://amazon.de" target="_blank"> <br>
+<strong>mailto:</strong>, mail göndermek icin kullanilir. <br>
+&lt;a href="mailto:said@gmail.com">bana ulasin&lt;/a> <br><br>
+
+Linklere ayni zamanda <strong>title=""</strong> atributu da verebiliriz, <br>
+bu sayede maus ile üzerine gelindiginde aciklama cikacaktir.
+
+<h3>ayni sayfa icinde</h3>
+gidilmek istenilen Tag a bir <strong>id</strong> verilmeli. <br>
+<ul>
+    <li>en az 3 harften olusmali</li>
+    <li>rakamla baslamamali </li>
+    <li>türkce karakterler icermemeli</li>
+    <li>kücük harflerle yazilmali</li>
+    <li>bosluk olmamali onun yerine kisa cizgi kullanilmali</li>
+    <li>Bir ID den SADECE BIR TANE OLMALI</li>
 </ul>
 
-<h2>align-content</h2>
+&lt;h3 id="bolum-3"> <br>
+&lt;a href="#bolum-3"> <br>
+eger en yükari cikilmak istenirse <strong>#top</strong> yazilmasi yeterlidir. <br><br>
+<a href="#top">yukari</a> <br><br>
+eger kaymasini istiyorsak style kismina; <br>
+html { <br>
+    scroll-behavior: smooth; <br>
+} <br>
+
+
+
+parcadaki bir kelimeye <strong>span</strong> elementini ekleyerek o kelimeye id verdigimizde 
+istedigimiz yerden kelimeye ulasabiliriz. <br>
+
+&lt;span id="kelime">kelime&lt;/span> <br>
+&lt;a href="#kelime">kelimeye gitmek icin tikla&lt;/a> <br><br>
+
+<span id="kelime">kelime</span> <br>
+<a href="#kelime">kelimeye gitmek icin tikla</a> <br>
+
+eger style kisminda kelimenin arka plani boyamak istersek; <br>
+
+#kelime{ <br>
+    background: pink; <br>
+} <br><br>
+
+eger baska bir html ile bag kurulacaksa; <br>
+&lt;a href="iletisim.html">ILETISIM&lt;/a> <br>
+<a href="Notlar.html">Notlar</a> <br>
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+
+<h2>resim ekleme</h2>
+<strong>img</strong> kapatmaya gerek yoktur. <br>
+&lt;img src="resim linki" alt="görünmeyen aciklama" title="görünen aciklama&amp;#10;"> <br><br>
+<img src="img\essen_3.jpg" alt="papatyalar uzerinde ucan acik mavi kelebek" 
+title="kelebek #10; ve Papatya">
+<br><br>
+<strong>alt</strong> atributu; <br>
 <ul>
-    <li><strong>align-content: flex-start;</strong><br>
-    birden fazla satirda elemanlarin nasil yerlestirilecegini ayarlamak icin 
-    sol üstten baslayarak elementleri siralar.</li>
-    <li><strong>align-content: flex-end;</strong><br></li>
-    <li><strong>align-content: center;</strong><br></li>
-    <li><strong>align-content: space-between;</strong><br></li>
-    <li><strong>align-content: space-around;</strong><br></li>
-    <li><strong>align-content: stretch;</strong><br></li>
-</ul>
+    <li>resim yüklenemediginde</li>
+    <li>görme engelliler icin ekran okuyuculari tafindan okunmasi icin</li>
+    <li>google in daha iyi resmi anlayip siniflayabilmesi icin gereklidir.</li>
+</ul> <br>
 
-<h2>align-self</h2>
-    <ul>
-        <li><strong>align-self: auto;</strong><br>
-        icindeki bir elementin pozisyonunu ayarlar</li>
-        <li><strong>align-self: flex-start;</strong><br>
-        dikey olarak üstten hizalar</li>
-        <li><strong>align-self: flex-end;</strong><br>
-        en alta yapistirir</li>
-        <li><strong>align-self: center;</strong><br>
-        sayfa ortasina hizalar</li>
-        <li><strong>align-self: baseline;</strong><br>
-        yazi karakterlerini esas alarak elementleri ortala</li>
-        <li><strong>align-self: stretch;</strong><br>
-        varsayilan özelliktir.</li>
-    </ul>
-<h2>flex-grow</h2>
-Eger elemenlerin satirinda bosluk varsa bunu degerlendir ve büyüyerek o yeri kapla <br>
-<strong>flex-grow: 1;</strong> <br>
-eger ayni satirdaki iki veya daha fazla element e grow ozelligi vermek istersek degisik 
-sayilarla kalan yeri paylasabilirler. 5 3 gibi <br>
+<strong>title</strong> atributu; <br>
+resmin üzerine gelindiginde istenilen aciklamanin cikmasi icin yazilir. <br>
+eger yazinin yatay uzamasini istemiyorsak <strong>&amp;#10;</strong> yazarak alt satira gecilir. <br><br>
 
-<h2>order</h2>
-her elementin default degeri 0(sifir) oldugu icin eger -1 dersek denilen element ilk
-siraya yerlesir. <br>
-<strong>order: -1;</strong> <br>
+Eger altina yazi eklemek istersek; <br>
+&lt;figure> <br>
+&lt;img src="img/essen_3.jpg" alt="essen" title="berg des Essens"> <br>
+&lt;figcaption>Essen ist Unterhaltsam&lt;/figcaption> <br>
+&lt;/figure> <br><br>
 
-<h2>flex-shrink</h2>
-Elementin kapsadigi alanin hicbir zaman kücülmesini ve bozulmasini istemiyorsak kullaniriz. <br>
-<strong>flex-shrink: 0;</strong> <br>
-her elementin varsayilan degeri 1 oldugu icin sayfayi kücültursek sekiller bozulabilir. <br>
+<strong>&lt;figure></strong> elementinin block element oldugunu unutmayalim <br><br>
+<strong>&lt;figcaption></strong> elementi alttaki/üstteki yazinin resime bagli oldugunu bildirir. <br><br>
+
+<figure>
+    <img src="img\essen_3.jpg" alt="essen" title="berg des Essens">
+    <figcaption>Essen ist Unterhaltsam</figcaption>
+</figure>
+
+eger resme link vermek istersek; <br>
+&lt;a href="https://amazon.de">&lt;img src="resim linki">&lt;/a> <br>
+<a href="https://amazon.de"><img src="img\essen_3.jpg" alt="papatyalar uzerinde ucan acik mavi kelebek" title="kelebek ve Papatya">
+</a> <br><br>
+eger resmin boyutunu ayarlamak istersek; <br>
+&lt;img src="resim linki" width="150px" height="150px"> <br>
+
+<h2>video ekleme</h2>
+&lt;video controls width="400px"> <br>
+&lt;source src="media\interdiction-death-to-our-leaders.mp4" type="video/mp4"> <br>
+&lt;/video> <br><br>
+
+<strong>controls</strong> oynatma tuslarini getirir. <br>
+<strong>autoplay</strong> otomatik baslatir<br>
+<strong>muted</strong> sessiz calar<br>
+<strong>loop</strong> bitince bastan yeniden baslatir<br>
+<strong>preload</strong> videonun ne kadar büyük oldugu bilgisi otomatik olarak okunur ve 
+gerekli alani kaplamaya baslar <br>
+<strong>poster="img/poster.jpg"</strong> videoda görünmesi istenilen resim ilk olarak görünür. <br><br>
+<video controls preload width="400px">
+    <source src="media\interdiction-death-to-our-leaders.mp4" type="video/mp4">
+</video> <br><br>
+html 5 ile sadece <strong>&lt;video src=""></strong> Elementi ile de artik calismaktadir. <br><br>
+
+<h3>Youtube videosu ekleme</h3>
+yutuba gir - paylas de- yerlestir e bas-  alttakileri isaretle<br>
+<div>
+    <div>
+        <input type="checkbox" name="b" value="a"> <span>Player-Steuerelemente anzeigen.</span>
+    </div>
+    <div>
+        <input type="checkbox" name="b" value="c"> <span>Erweiterten Datenschutzmodus aktivieren.</span>
+    </div>
+</div>
+kopyala- istedigin yere <strong>iframe</strong> olarak yapistir. <br><br>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u4wyRgRiiUU" 
+title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br><br>
+
+<h3>iframe  olarak baska internet sayfasi ekleme</h3>
+&lt;iframe id="iramesize" src="https://google.com" frameborder="0" width="400px">&lt;/iframe> <br>
+ama her web sitesi kendi sayfasinin kullanilmasini istemeyebilir. <br> <br>
+<iframe id="iramesize" src="https://google.com" frameborder="0" width="400px"></iframe>
+
+<h2>Ses ekleme</h2>
+&lt;audio controls> <br>
+&lt;source src="media\painful-passion.mp3" type="audio/mpeg"> <br>
+&lt;source src="media\painful-passion.ogg" type="audio/ogg">
+&lt;/audio> <br>
+
+video daki atributlarin neredeyse tamami burada da gecerlidir. <br><br>
+<audio controls>
+    <source src="media\painful-passion.mp3" type="audio/mpeg">
+    <source src="media\painful-passion.ogg" type="audio/ogg">
+</audio> <br><br>
+
+html 5 ile artik <strong>&lt;audio src=""></strong> Elementi ile de artik calismaktadir. <br><br>
+<audio src="media\painful-passion.mp3" controls>Müzik</audio>
+<h2>Buton olusturma</h2>
+&lt;button>TIKLA&lt;/button> <br>
+<button>TIKLA</button> <br><br>
+eger butona tiklandiginda istenilen siteye gitmesini istersek; <br>
+&lt;a href="https://amazon.de">&lt;button>TIKLA&lt;/button>&lt;/a> <br>
+<a href="https://amazon.de"><button>TIKLA</button></a> <br><br>
+istersek a etiketini buton tag inin icine de koyabilirdir. <br><br>
+
+<h2>sayfada alan olusturma</h2>
+&lt;div> <br>
+satirin tamamini kapsar <br>
+&lt;div style="background-color: yellow;">satiri kapsar&lt;/div> <br>
+<div style="background-color: yellow;">satiri kapsar</div><br>
+
+&lt;span> <br>
+yazinin oldugu kadar alan kaplar <br>
+&lt;span style="background-color: green;">yazi alani&lt;/span> <br>
+<span style="background-color: green;">yazi alani</span>
+
+<hr>
+<h2>Form olusturma</h2>
+Mutlaka <strong>form</strong> etiketinin icinde olmalidir. <br><br>
+&lt;form action="https://amazon.de" method="get"><br>
+&lt;div><br>
+&lt;label for="ad">Isim giriniz&lt;/label><br>
+&lt;input type="text" name="isim:" value="adiniz" id="ad"><br>
+&lt;/div><br>
+&lt;div><br>
+&lt;label for="">Mail giriniz&lt;/label><br>
+&lt;input type="email" name="email" placeholder="isim"> <br>
+&lt;/div> <br>
+&lt;button type="submit">Gönder&lt;/button> <br>
+&lt;Input type="submit" value="Gönder">&lt;/Input> <br>
+&lt;/form> <br><br>
+
+Label eski form oldugu icin yer tasarrufu acisindak kullanilmasi tavsiye edilmez. <br><br>
+
+&lt;input type="text" name="Vorname:" placeholder="Vorname"> <br><br>
+<input type="text" name="Vorname:" placeholder="Vorname"> <br>
+<input type="email" name="E-mail:" placeholder="E-Mail*" required> <br>
+<input type="tel" name="Telefon:" placeholder="Telefon"><br><br>
+
+<strong>pettern</strong> atributu ile telefon no formati ayarlanabilir. <br><br>
+
+eger label deki <strong>for</strong> atributu ile inputtaki <strong>id</strong> ayni ada sahipse 
+label in icinde yazan yaziya da tiklandiginda input AKTIF olur. <br><br>
+
+<strong>name</strong> atributu <strong>action</strong> atributunda yazilan adrese giden bilginin 
+ayrintisini göstermektedir. <br><br>
+
+<strong>name</strong> ve <strong>value</strong> atributunun birlikte bulunmasi arzu edilir.
+
+eger form daki method yerine <strong>get</strong> yazilirsa bilgiler görünerek gider. <strong>post</strong>
+yazilirsa gizliden gider. <br><br>
+
+buton input veya button olarak iki türlü de olusturulabilir. <br><br>
+
+Eger yazi kutusunun icinde bizden istenilen bilgi yazsin denilirse; <br>
+<strong>placeholder=""</strong> atributu kullanilmalidir.
+
+<form action="https://amazon.de" method="get">
+    <div>
+        <label for="ad">Isim giriniz</label>
+        <input type="text" name="isim:" value="adiniz" placeholder="isim" id="ad">
+    </div>
+    <div>
+        <label for="">Mail giriniz</label>
+        <input type="email" name="email">
+    </div>
+    <button type="submit">Gönder</button> <br>
+    <Input type="submit" value="Gönder"></Input>
+</form> <br>
+
+
+type kismina <strong>number</strong> da girilebilir. <br>
+<input type="number"> <br>
+<input type="number" name="quantity" min="1" max="5"> <br>
+<input type="range" min="0" max="20"> <br>
+<input type="date"> <br>
+<input type="month"> <br>
+<input type="week"> <br>
+<input type="datetime-local"> <br>
+<input type="time"> <br>
+<input type="color"> <br>
+<input type="url"> <br>
+<input type="search"> <br>
+<input type="file"> <br>
+<br>
+
+sifre icin input type <strong>password</strong> olmali <br> <br>
+&lt;div> <br>
+&lt;label for="">Mail giriniz&lt;/label> <br>
+&lt;input type="password"> <br>
+&lt;/div> <br> <br>
+<div>
+    <label for="">Mail giriniz</label>
+    <input type="password"> 
+</div> <br>
+
+girilen bilgilerin sifirlanmasi ve silinmesi icin;  <br>
+&lt;input type="reset" value="temizle">  veya<br>
+&lt;button type="reset">temizle</button> <br>
+<input type="reset" value="temizle"> <br><br>
+
+yazdirmak istersek css ten yardim almaliyiz.  <br>
+&lt;button onClick="window.print()">Yazdir&lt;/button><br>
+<button onClick="window.print()">Yazdir</button> <br><br>
+
+cinsiyet icin type <strong>radio</strong> olmali, <br>
+eger tek bir secim yapilmasi gerekiyorsa;<br>
+<strong>name</strong>ler ayni olmalidir. <br><br>
+
+&lt;div> <br>
+&lt;label for="">cinsiyet&lt;/label> <br>
+&lt;div> <br>
+&lt;span>Erkek:&lt;/span>&lt;input type="radio" name="cins" value="erkek"> <br>
+&lt;/div> <br>
+&lt;div> <br>
+&lt;span>Kadin:&lt;/span>&lt;input type="radio" name="cins" value="kadin"> <br>
+&lt;/div> <br>
+&lt;/div> <br><br>
+<div>
+    <label for="">cinsiyet</label>
+    <div>
+        <span>Erkek:</span><input type="radio" name="cins" value="erkek">
+    </div>
+    <div>
+        <span>Kadin:</span><input type="radio" name="cins" value="kadin">
+    </div>
+</div> <br>
+
+eger <strong>select</strong> elementini kullanmak istersek; <br>
+&lt;select name="cinsiyet" id=""><br>
+&lt;option>cinsiyet&lt;/option><br>
+&lt;option value="kadin">kadin&lt;/option><br>
+&lt;option value="erkek">erkek&lt;/option><br>
+    &lt;/select> <br><br>
+eger bir secenegin default olarak görünmesi istenirse 
+<strong>selected</strong> atributu kullanilmalidir. <br><br>
+Kisisel bilgiler: <br>
+<select name="cinsiyet" id="">
+    <option>cinsiyet</option>
+    <option value="kadin">kadin</option>
+    <option value="erkek">erkek</option>
+    <option value="diger">diger</option>
+</select> <br><br>
+
+eger select tagini gruplamak istersek; <br>
+option lari <strong>&lt;optgroup label="A"></strong> icine almaliyiz. <br><br>
+
+memleket: <br>
+<select name="ülke" id="">
+    <optgroup label="A">
+        <option value="almanya">Almanya</option>
+        <option value="azerbaycan">Azerbaycan</option>
+    </optgroup>
+    <optgroup label="B">
+        <option value="belcika">Belcika</option>
+        <option value="brezilya">Brezilya</option>
+    </optgroup>
+</select> <br><br>
+
+
+<strong>radio</strong> da  seceneklerden bir tanesi mutlaka isaretlenmek zorundadir. <br><br>
+&lt;div><br>
+&lt;label for="">Hobiler&lt;/label><br>
+&lt;div><br>
+&lt;input type="checkbox" name="hobi" value="kitap"> &lt;span>Kitap okumak&lt;/span><br>
+&lt;/div><br>
+&lt;div><br>
+&lt;input type="checkbox" name="hobi" value="yüzme"> &lt;span>yüzmek&lt;/span><br>
+&lt;/div><br>
+&lt;/div> <br><br>
+
+<div>
+    <label for="">Hobiler</label>
+    <div>
+       <input type="checkbox" name="hobi" value="kitap"> <span>Kitap okumak</span>
+    </div>
+    <div>
+        <input type="checkbox" name="hobi" value="yüzme" checked> <span>yüzmek</span>
+    </div>
+</div><br>
+
+<strong>checkbox</strong> icin isaretleme zorunlulugu yoktur ve birden fazla secenek 
+isaretlenebilir. <br>
+Eger kullaniciya isaetli olarak gitsin istersek <strong>checked</strong> 
+atributunu kullanmaliyiz. <br><br>
+
+<strong>&lt;textarea></strong> ile metin girme ekrani olusturulabilir. <br>
+&lt;textarea name="" id="" cols="30" rows="10">yorumunuz&lt;/textarea>
+<textarea name="" id="" cols="30" rows="10">yorumunuz</textarea> <br>
+
+<strong>style="resize:none;</strong> atributu eklersek kullanici metin alanini genisletemez. <br>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+
+<h1>css özelliklelri</h1>
+
+<strong>head</strong> larin arasina eklenmelidir. <br><br>
+
+&lt;head><br>
+&lt;title>...&lt;/title><br>
+&lt;style><br>
+        h1{<br>
+            background-color: blue; <br>
+            color: black;<br>
+            border: 5px solid green ;<br>
+            border-style: dotted/ dashed/ solid/ double; <br>
+            border-color: red; <br>
+            border-radius: 10px;
+            width: 800px;
+            font-size:20px;
+          }<br>
+&lt;/style><br>
+&lt;/head><br><br>
+
+css de yorum satiri eklemek icin <strong>/* */</strong> yapariz. <br><br>
+
+<strong>background-color: currentcolor</strong> denirse mevcut rengi uygular.
+
+eger yazinin parlakligini azaltmak istersek <strong>opacity:0.4;</strong>
+atributunu kullanabiliriz. <br>rgba(255, 0, 0, 0.3) kismindaki a degerini de 
+bulaniklik ayarlamak icin kullanabiliriz.
+
+<strong>padding:10px;</strong> <br>
+yazi ile cerceve arasinda bosluk olusturur. <br>
+padding-left/ right/ bottom/ top <br><br>
+<strong>margin:20px;</strong><br>
+her cerceve kendi etrafina 20px bosluk birakir. <br>
+margin-left/ right/ bottom/ top <br><br>
+
+<strong>text-align: left/right/center</strong> <br>
+metnin yönünü belirler. <br><br>
+
+eger iki css özelligi farkli yerlerde kullanilmissa; <br>
+<strong>!important</strong> yazarak istedigimizi yaptiriririz. <br>
+button:hover { <br>
+    background-color: yellow !imoprtant <br>
+} <br>
+hover; mausla üzerine geldiginde istenilen renge döndürür. <br> <br>
+
+arka plan rengini kaldirmak icin; <br>
+<strong>background-color: transparent;</strong> <br><br>
+
+Eger ekrandaki yazilarin ekran kücülse bile cercevesini tasmasin istersek; <br>
+<strong>line-break: anywhere;</strong> <br><br>
+
+eger ayni kücülme islemi resimde olursa <br>
+<strong>max-width: 500 px; <br>
+width: 100%;</strong> <br><br>
+
+eger bir cercevenin icindeki elemenleri yan yana istersek; <br>
+<strong>display: flex;</strong> (display: inline da olabiliyor.) <br>
+Block elementlerin default olarak display: block; seklinde oldugunu hatirlayalim. <br><br>
+
+<strong>UYARI:</strong> yalnizca block elementlere width ve height  verilebilir, 
+inline elementlere VERILEMEZ!! <br><br>
+
+eger sayfadaki butun yazi ve seillere atama yapmak istersek; <br>
+<strong>*</strong> kullaniyoruz. <br><br>
+
+yazi stilini degistirmek istersek; <br>
+<strong>font-family: Arial/L ato</strong> <br><br>
+
+Eger farkli bir stil kullanmak istersek; <br>
+google - google fonts- üstte deneme yyazisi yazilabilir- sectigin yaziya tikla-
+bu stili sec- sagdaki acilan menuden -link i kopyala- head in icine en üste ekle. <br>
+font-familie olarak sagdaki kisimdan css alanini kopyala. <br><br>
+
+eger bir özelligi birden cok elemente vereceksek, <br>
+<strong>h1,h2,h3 { <br>
+    font-family: Arial;
+}</strong>
+<hr>
+Bir elementin birden cok <strong>class</strong> i ve bir adet <strong>id</strong> i olabilir. <br>
+&lt;div class="navbar-menu flex1 alt" id="navbar">
+
+<strong>BILGI</strong> Bir sayfada bir elementin ID i varsa link in sonuna 
+<strong>#id-adi</strong> yazilirsa direkt olarak oraya gider.
+
+
+<hr>
+Bütün bu css kodlarini <strong>style.css</strong> dosyasina da kaydedebiliriz. <br>
+Eger ayni konumda ise; <br>
+<strong>&lt;link href="style.css" rel="stylesheet"></strong> <br>
+head kisminin icine en altina yaziyoruz.
 
 <hr>
 
-<h2>extra bilgiler</h2>
+<h2>Sayfa tasarlarken</h2>
+<div>
+    <ul>
+        <li>&lt;html>
+            <ul>
+                <li>&lt;head>
+                    <ul>
+                        <li>&lt;meta></li>
+                        <li>&lt;title>&lt;/title></li>
+                        <li>&lt;link rel="stylesheet" href=""></li>
+                        <li>&lt;style>&lt;/style>(gerekirse)</li>
+                    </ul>
+                </li>
+                <li>&lt;/head></li>
+                <li>&lt;body>
+                    <ul>
+                        <li>&lt;header>
+                            <ul>
+                                <li>&lt;nav>
+                                    <ul>
+                                        <li>&lt;a>&lt;/a></li>
+                                    </ul>
+                                </li>
+                                <li>&lt;/nav></li>
+                            </ul>
+                        </li>
+                        <li>&lt;/header></li>
+                        <li>&lt;main>
+                            <ul>
+                                <li>&lt;section>
+                                    <ul>
+                                        <li>&lt;article>&lt;/article></li>
+                                    </ul>
+                                </li>
+                                <li>&lt;/section></li>
+                                <li>&lt;aside>&lt;/aside></li>
+                            </ul>
+                        </li>
+                        <li>&lt;/main</li>
+                        <li>&lt;footer>&lt;/footer></li>
+                    </ul>
+                </li>
+                <li>&lt;/body></li>
+            </ul>
+        </li>
+        <li>&lt;/html></li>
+    </ul>
+</div>
+<hr>
 
-<strong>position: relative;</strong> icine yerlestirilen tüm elemanlari absolut da olsa icinde tutar <br><br>
 
-<strong>position: absolute</strong> her zaman sabit yerde  kalmasi icin kullanilir.
 
-<strong>width: calc(50% - 20px)</strong> genisligin ekranin yarisini kaplasin ancak ekran kenarindan da 
-20px lik yer birakmayi unutma!
+
 
 </body>
 </html>
