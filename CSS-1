@@ -138,7 +138,8 @@ harfler arasindaki boslugu acar veya kapatir <br><br>
 kelimeler arasindaki boslugu ayarlar. <br><br>
 
 <strong>text-decoration: underline/none;</strong> <br>
-kelime altina ustune vs cizgi icin kullanilir. <br><br>
+kelime altina ustune vs cizgi icin kullanilir. <br>
+overline(üstü cizili), line-trought(gecersiz cizgisi)<br><br>
 
 Eger kodlari duzenli hale getirmek istersek css decompresor  olarak aratabiliriz. <br><br>
 
@@ -230,12 +231,86 @@ birinci cizgiden baslar ve 4. cizgide hücre sona erecektir. <br><br>
     </ul>
 </p>    
 
+<hr>
 
+<strong>ColorZilla</strong> eklentisini Chrome dan ekleyerek isteneilen yerdeki rengi 
+alabilirsiniz.
 
+<h3>Resim atama</h3>
+<strong>background-image: url("");</strong> yazarak resmin yolunu yerlestir. <br>
+<strong>background-size: cover;</strong> ile de resim ekrani uygun sekilde kaplasin <br>
+width ve height ini uygun sekilde ayarlamak lazim. <br><br>
+background-size:100px; pixel olarak resmin büyüklügü ayarlanabilir. <br>
+background-size: no-repeat; tekrarlanmaz <br>
+background-size:repat-x; yatay olarak resim tekrarlanir. <br>
+background-size:repeat-y; dikey olarak tekrarlanir. <br>
+background-position: right/left/center top/bottom/center; resmin pozisyonunu belirler. <br>
+background-attachment: fixed; resmi scroll olmasina ragmen sabitler.
 
+<hr>
+<h3>Display özellikleri</h3>
+özellikle inline elementlere width ve height atayamiyoruz, <br>
+atayabilmek icin; 
+<strong>display: inline-block;</strong> atributu eklememiz gerekir. <br>
+özellikle navbar daki linklerde cok isimize yarayacaktir.
+<hr>
 
+<h3>Margin</h3>
+egerbir container in sayfada ortada durmasini istersek; <br>
+<strong>width: 50%;</strong> <br>
+<strong>margin-left: auto;</strong> <br>
+<strong>margin-right: auto;</strong> veya margin: 0 auto; <br>
+<hr>
 
+<h3>Padding</h3>
+ paddig her zaman container in belirlenen alanini büyütecektir. <br>
+ bunu engellemek icin;  <strong>box-sizing: border-box</strong> 
+ özelligini kullanmaliyiz. (padding leri dahil et demektir.) <br>
+ eger container larla calisilacaksa genel olarak yazilmasi tavsiyedir. <br>
 
+ <hr>
+ <h3>ICON kullanma</h3>
+ikon kullanmak icin;
+<a href="https://fontawesome.com/icons">https://fontawesome.com/icons</a>
+adresine gidip istedigimizicon u alip kodunu yapistiralim. <br>
+ &lt;i class="fa-solid fa-acorn">&lt;/i> <br>
+ Ancak bu kodun calisabilmesi icin head a bir eklenti yapmamiz lazim: <br>
+ <a href="https://cdnjs.com/">https://cdnjs.com/</a> sitesine gidip 
+ <strong>fontawesome</strong> yazarak aratiyoruz, css dosya uzantisini 
+ head a ekliyoruz: <br>
+ &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+ <hr>
+ <h3>pseudo klasslari</h3>
+<strong>a:hover{<br>
+    color:red<br>
+    } <br> </strong>
+maus ile üzerine gelince yazi kirmizi renge dönecektir. <br>
+<strong>a:link{}</strong> tiklanmadan önceki halini gösterir.(yesil) <br>
+<strong>a:visited{}</strong> tiklanmis halini belirtir(siyah) <br>
+<strong>a:aktive{}</strong> tiklama sirasindaki halini belirtir(Mavi) <br><br>
+
+<strong>input:focus{}</strong> input üzerine odaklanir <br>
+default özellik oldugu icin <strong>outline: 0 </strong> yaparak
+cercevedeki maviligi götürüp yerine <strong>border: 2px solid red</strong>
+ yapabiliriz. <br><br>
+
+ <hr>
+ <h3>Pseudo elementleri/selektörleri</h3>
+ <strong>p::first-line{}</strong> mesela paragrasin ilk satirini yapilandirir. (kirmizi) <br>
+ <strong>p::first-letter{}</strong> ilk harfi yapilandirir. <br>
+ font-size: 50px; color: blue; <br>
+ <strong>p::after/before{content: ""}</strong> öncesi veya sonrasina yazi resim
+ link eklenebilir.
+
+ <hr>
+ <h3>Nth-Child Selector</h3>
+ <strong>p:nth-child(2){}</strong> mesela 2. paragrafi yapilandirabiliriz. <br>
+ <strong>p:first/last-child{color: white; background: red}</strong> ilk veya 
+ son cocugu yapilandirir.<br>
+ <strong>p:nth-child(even){}</strong> cift elementleri yapilandirir.(2n) <br>
+ <strong>p:nth-child(odd){}</strong> tek elementleri yapilandirir.(2n+1) <br>
+ <strong>ul li:nth-child(n + 4){}</strong> 4. cocuktan sonrasini yapilandirir. <br>
+ 
 </body>
 </html>
