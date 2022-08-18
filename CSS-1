@@ -5,312 +5,473 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Notlari</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 1.2rem;
+            letter-spacing: 0.03rem;
+            line-height: 1.7rem;
+            
+        }
+        main{
+            margin: 1rem;
+            padding:1rem;
+            background: #d4d4d4;
+            overflow: auto;
+            
+        }
+        ul li{
+            list-style-position:inside;
+            
+        }
+        h2,h3,h4,h5,h6{
+            padding-left: 4rem;
+            color:blue
+        }
+        #navbar{
+            background-color: black;
+            color: white;
+            height: 50px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            
+        }
+        #navbar h1{
+            text-align: center;
+            padding: 8px;
+            
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>Flexbox</h1>
-    <h2>flex-direction</h2>
-    <ul>
-        <li><strong>flex-direction: row;</strong> <br>
-        default özelliktir satirda soldan baslayarak elementleri siralar.</li>
-        <li><strong>flex-direction: row-reverse;</strong><br>
-        Sola dayayarak siralar</li>
-        <li><strong>flex-direction:column;</strong><br>
-        sol üstten baslayarak asagiya dogru siralar</li>
-        <li><strong>flex-direction:column-reverse;</strong><br>
-        tersten yukariya dogru sola dayali siralar.</li>
-    </ul> 
-    <h2>flex-wrap</h2>
-    <ul>
-        <li><strong>flex-wrap: nowrap;</strong><br>
-        hicbir zaman elementler ikinci satira inmesin.</li>
-        <li><strong>flex-wrap: wrap</strong><br>
-        gerektiginde ikinci ve alt satirlara inebilir.</li>
-        <li><strong>flex-wrap: wrap-reverse</strong><br>
-        tersten baslayarak siralar.</li>
-    </ul>
-    <h2>align-items</h2>
-    <ul>
-        <li><strong>align-items: flex-start;</strong><br>
-        dikey olarak üstten hizalar</li>
-        <li><strong>align-items: flex-end;</strong><br>
-        en alta yapistirir</li>
-        <li><strong>align-items: center;</strong><br>
-        sayfa ortasina hizalar</li>
-        <li><strong>align-items: baseline;</strong><br>
-        yazi karakterlerini esas alarak elementleri ortala</li>
-        <li><strong>align-items: stretch;</strong><br>
-        varsayilan özelliktir.</li>
-    </ul>
+    <nav id="navbar">
+        <h1>CSS TRIKLERI</h1>
+    </nav>
+    <main>
+        <div>
+            <div><br><br>
+                eger web sayfasinin default ayarlardan etkilenmesini istemiyorsaniz;  <br>
+                <strong>*{ <br>
+                padding: 0; <br>
+                margin: 0; <br>
+                box-sizing: border-box; <br>
+                } <br></strong>
+                yapmaliyiz.
+            </div>
+                <hr>
 
-<h2>justify-content</h2>
-<ul>
-    <li><strong>justify-content: flex-start;</strong><br>
-    yatay olarak hizalamayi yapar, soldan baslar.</li>
-    <li><strong>justify-content: flex-end;</strong><br>
-    sagdan baslar</li>
-    <li><strong>justify-content: center;</strong><br>
-    ortadan baslar</li>
-    <li><strong>justify-content: space-between;</strong><br>
-    kenarlara daya ama esit dagit</li>
-    <li><strong>justify-content: space-around;</strong><br>
-    her kutu ve henar arasinda ayni boslugu birak.</li>
-</ul>
+                <h2>Flexbox</h2>
+                <h3>flex-direction</h3>
+                <ul>
+                    <li><strong>flex-direction: row;</strong> <br>
+                        default özelliktir satirda soldan baslayarak elementleri siralar.</li>
+                    <li><strong>flex-direction: row-reverse;</strong><br>
+                        Sola dayayarak siralar</li>
+                    <li><strong>flex-direction:column;</strong><br>
+                        sol üstten baslayarak asagiya dogru siralar <br>
+                        eger Column halinde olursa <strong>align-items</strong> ile <strong>justfy-content</strong>
+                        görevleri yer degisecektir!!!</li>
+                    <li><strong>flex-direction:column-reverse;</strong><br>
+                        tersten yukariya dogru sola dayali siralar.</li>
+                </ul> 
+                <h4>flex-wrap</h4>
+                <ul>
+                    <li><strong>flex-wrap: nowrap;</strong><br>
+                        hicbir zaman elementler ikinci satira inmesin.</li>
+                    <li><strong>flex-wrap: wrap</strong><br>
+                        gerektiginde ikinci ve alt satirlara inebilir.</li>
+                    <li><strong>flex-wrap: wrap-reverse</strong><br>
+                        tersten baslayarak siralar.</li>
+                </ul>
+                <h3>flex-flow</h3>
+                direction ile wrap özelligini birlestiren bir kisayoldur.
+                <ul>
+                    <li><strong>flex-flow: wrap row</strong> <br>
+                        satir halinde sirala ve satir bitince asagiya gec.</li>
+                   
+                    <li><strong>flex-flow: nowrap column</strong> <br>
+                        sutun halinde sirala ve sutun bitince yanina gec</li>
+                </ul>
+                <h3>align-items</h3>
+                <ul>
+                    <li><strong>align-items: flex-start;</strong><br>
+                        dikey olarak üstten hizalar</li>
+                    <li><strong>align-items: flex-end;</strong><br>
+                        en alta yapistirir</li>
+                    <li><strong>align-items: center;</strong><br>
+                        sayfa ortasina hizalar</li>
+                    <li><strong>align-items: baseline;</strong><br>
+                        yazi karakterlerini esas alarak elementleri ortala</li>
+                    <li><strong>align-items: stretch;</strong><br>
+                        varsayilan özelliktir.</li>
+                </ul>
 
-<h2>align-content</h2>
-<ul>
-    <li><strong>align-content: flex-start;</strong><br>
-    birden fazla satirda elemanlarin nasil yerlestirilecegini ayarlamak icin 
-    sol üstten baslayarak elementleri siralar.</li>
-    <li><strong>align-content: flex-end;</strong><br></li>
-    <li><strong>align-content: center;</strong><br></li>
-    <li><strong>align-content: space-between;</strong><br></li>
-    <li><strong>align-content: space-around;</strong><br></li>
-    <li><strong>align-content: stretch;</strong><br></li>
-</ul>
+                <h3>justify-content</h3>
+                <ul>
+                    <li><strong>justify-content: flex-start;</strong><br>
+                        yatay olarak hizalamayi yapar, soldan baslar.</li>
+                    <li><strong>justify-content: flex-end;</strong><br>
+                        sagdan baslar</li>
+                    <li><strong>justify-content: center;</strong><br>
+                        ortadan baslar</li>
+                    <li><strong>justify-content: space-between;</strong><br>
+                        kenarlara daya ama esit dagit</li>
+                    <li><strong>justify-content: space-around;</strong><br>
+                        her kutu ve henar arasinda ayni boslugu birak.</li>
+                </ul>
 
-<h2>align-self</h2>
-    <ul>
-        <li><strong>align-self: auto;</strong><br>
-        icindeki bir elementin pozisyonunu ayarlar</li>
-        <li><strong>align-self: flex-start;</strong><br>
-        dikey olarak üstten hizalar</li>
-        <li><strong>align-self: flex-end;</strong><br>
-        en alta yapistirir</li>
-        <li><strong>align-self: center;</strong><br>
-        sayfa ortasina hizalar</li>
-        <li><strong>align-self: baseline;</strong><br>
-        yazi karakterlerini esas alarak elementleri ortala</li>
-        <li><strong>align-self: stretch;</strong><br>
-        varsayilan özelliktir.</li>
-    </ul>
-<h2>flex-grow</h2>
-Eger elemenlerin satirinda bosluk varsa bunu degerlendir ve büyüyerek o yeri kapla <br>
-<strong>flex-grow: 1;</strong> <br>
-eger ayni satirdaki iki veya daha fazla element e grow ozelligi vermek istersek degisik 
-sayilarla kalan yeri paylasabilirler. 5 3 gibi <br>
+                <h3>align-content</h3>
+                <ul>
+                    <li><strong>align-content: flex-start;</strong><br>
+                        birden fazla satirda elemanlarin nasil yerlestirilecegini ayarlamak icin 
+                        sol üstten baslayarak elementleri siralar.</li>
+                    <li><strong>align-content: flex-end;</strong><br></li>
+                    <li><strong>align-content: center;</strong><br></li>
+                    <li><strong>align-content: space-between;</strong><br></li>
+                    <li><strong>align-content: space-around;</strong><br></li>
+                    <li><strong>align-content: stretch;</strong><br></li>
+                </ul>
 
-<h2>order</h2>
-her elementin default degeri 0(sifir) oldugu icin eger -1 dersek denilen element ilk
-siraya yerlesir. <br>
-<strong>order: -1;</strong> <br>
+                <h3>align-self</h3>
+                <ul>
+                    <li><strong>align-self: auto;</strong><br>
+                        icindeki bir elementin pozisyonunu ayarlar</li>
+                    <li><strong>align-self: flex-start;</strong><br>
+                        dikey olarak üstten hizalar</li>
+                    <li><strong>align-self: flex-end;</strong><br>
+                        en alta yapistirir</li>
+                    <li><strong>align-self: center;</strong><br>
+                        sayfa ortasina hizalar</li>
+                    <li><strong>align-self: baseline;</strong><br>
+                        yazi karakterlerini esas alarak elementleri ortala</li>
+                    <li><strong>align-self: stretch;</strong><br>
+                        varsayilan özelliktir.</li>
+                </ul>
+                <h3>flex-grow</h3>
+                Eger elemenlerin satirinda bosluk varsa bunu degerlendir ve büyüyerek o yeri kaplar. <br>
+                <strong>flex-grow: 1;</strong> (flex: 1; de ayni isi yapiyor) <br>
+                eger ayni satirdaki iki veya daha fazla element e grow ozelligi vermek istersek degisik 
+                sayilarla kalan yeri paylasabilirler. 5 3 gibi <br>
 
-<h2>flex-shrink</h2>
-Elementin kapsadigi alanin hicbir zaman kücülmesini ve bozulmasini istemiyorsak kullaniriz. <br>
-<strong>flex-shrink: 0;</strong> <br>
-her elementin varsayilan degeri 1 oldugu icin sayfayi kücültursek sekiller bozulabilir. <br>
+                <h2>order</h2>
+                her elementin default degeri 0(sifir) oldugu icin eger -1 dersek denilen element ilk
+                siraya yerlesir. <br>
+                <strong>order: -1;</strong> <br>
 
-<hr>
+                <h2>flex-shrink</h2>
+                Elementin kapsadigi alanin hicbir zaman kücülmesini ve bozulmasini istemiyorsak kullaniriz. <br>
+                <strong>flex-shrink: 0;</strong> <br>
+                her elementin varsayilan degeri 1 oldugu icin sayfayi kücültursek sekiller bozulabilir. <br>
 
-<h2>extra bilgiler</h2>
+                <hr>
 
-<strong>position: relative;</strong> icine yerlestirilen tüm elemanlari absolut da olsa icinde tutar <br><br>
+                <h2>extra bilgiler</h2>
 
-<strong>position: absolute</strong> her zaman sabit yerde  kalmasi icin kullanilir.
+                <strong>position: relative;</strong> icine yerlestirilen tüm elemanlari absolut da olsa icinde tutar <br><br>
 
-<strong>width: calc(50% - 20px)</strong> genisligin ekranin yarisini kaplasin ancak ekran kenarindan da 
-20px lik yer birakmayi unutma!
+                <strong>position: absolute</strong> her zaman sabit yerde  kalmasi icin kullanilir.
 
-<hr>
+                <strong>width: calc(50% - 20px)</strong> genisligin ekranin yarisini kaplasin ancak ekran kenarindan da 
+                20px lik yer birakmayi unutma!
 
-<strong>font-size: 21px;</strong> <br>
-yazi büyüklügünü ayarlar <br><br>
+                <hr>
 
-<strong>font-family: Arial, Helvetica, sans-serif;</strong> <br>
-yazi fontu tarzini belirler. <br><br>
+                <strong>font-size: 21px;</strong> <br>
+                yazi büyüklügünü ayarlar <br><br>
 
-<strong>font-style: italic;</strong> <br>
-yazi tarzini belirler. <br><br>
+                <strong>font-family: Arial, Helvetica, sans-serif;</strong> <br>
+                yazi fontu tarzini belirler. <br><br>
 
-<strong>font-weight: bold/100/900;</strong> <br>
-yazi kalinligini ayarlamak icin kullanilir. <br><br>
+                <strong>font-style: italic;</strong> <br>
+                yazi tarzini belirler. <br><br>
 
-<strong>text-transform: uppercase/lowercase/capitalize/none;</strong> <br>
-harf büyüklügünü ayarlamak icin kullanilir. <br>
-büyük/kücük/ilk harfler büyük <br><br>
+                <strong>font-weight: bold/100/900;</strong> <br>
+                yazi kalinligini ayarlamak icin kullanilir. <br><br>
 
-<strong>font-variant:small-caps;</strong><br>
-büyük hafleri biraz daha büyük yazar digerlerini de büüyk harfe cevirir. <br><br>
+                <strong>text-transform: uppercase/lowercase/capitalize/none;</strong> <br>
+                harf büyüklügünü ayarlamak icin kullanilir. <br>
+                büyük/kücük/ilk harfler büyük <br><br>
 
-<strong>letter-spacing: 10px;</strong><br>
-harfler arasindaki boslugu acar veya kapatir <br><br>
+                <strong>font-variant:small-caps;</strong><br>
+                büyük hafleri biraz daha büyük yazar digerlerini de büüyk harfe cevirir. <br><br>
 
-<strong>word-spacing: 20px;</strong><br>
-kelimeler arasindaki boslugu ayarlar. <br><br>
+                <strong>letter-spacing: 10px;</strong><br>
+                harfler arasindaki boslugu acar veya kapatir <br><br>
 
-<strong>text-decoration: underline/none;</strong> <br>
-kelime altina ustune vs cizgi icin kullanilir. <br>
-overline(üstü cizili), line-trought(gecersiz cizgisi)<br><br>
+                <strong>word-spacing: 20px;</strong><br>
+                kelimeler arasindaki boslugu ayarlar. <br><br>
 
-Eger kodlari duzenli hale getirmek istersek css decompresor  olarak aratabiliriz. <br><br>
+                <strong>text-decoration: underline/none;</strong> <br>
+                kelime altina ustune vs cizgi icin kullanilir. <br>
+                overline(üstü cizili), line-trought(gecersiz cizgisi)<br><br>
 
-<strong>text-shadow: 3px 3px 6px black;</strong> <br>
-<a href="https://html-css-js.com/css/generator/text-shadow/"> 
-https://html-css-js.com/css/generator/text-shadow/</a> sitesinden hazir kodlar bulunabilir. <br>
-ilk deger yatay ikinci deger dikey, 3. deger gölge miktari, dördüncüsü ise renktir. <br><br>
+                Eger kodlari duzenli hale getirmek istersek css decompresor  olarak aratabiliriz. <br><br>
 
-eger renk cesitlerini görmek istersek; <br>
-<a href="https://www.mediaevent.de/css-text-mit-verlauf-fuellen/">
-    https://www.mediaevent.de/css-text-mit-verlauf-fuellen/</a> ya da <br>
-    <a href="https://fossheim.io/writing/posts/css-text-gradient/">
-        https://fossheim.io/writing/posts/css-text-gradient/</a>  <br><br>
+                <strong>text-shadow: 3px 3px 6px black;</strong> <br>
+                <a href="https://html-css-js.com/css/generator/text-shadow/"> 
+                https://html-css-js.com/css/generator/text-shadow/</a> sitesinden hazir kodlar bulunabilir. <br>
+                ilk deger yatay ikinci deger dikey, 3. deger gölge miktari, dördüncüsü ise renktir. <br><br>
 
-<strong>text-align: center/left/right/justify;</strong>   <br>
-metin yönünü ayarlamak icin kullanilir.     
+                eger renk cesitlerini görmek istersek; <br>
+                <a href="https://www.mediaevent.de/css-text-mit-verlauf-fuellen/">
+                    https://www.mediaevent.de/css-text-mit-verlauf-fuellen/</a> ya da <br>
+                <a href="https://fossheim.io/writing/posts/css-text-gradient/">
+                    https://fossheim.io/writing/posts/css-text-gradient/</a>  <br><br>
 
-<strong>margin: 0 auto</strong> <br>
-ilk deger yukari asagisi, ikinci deger sag sol oluyor. <br>
-normalde saat kadrani gibi hesaplanir 4 adet deger oldugunda. ust sag alt sol <br>
-top/bottom/right/left <br><br>
+                <strong>text-align: center/left/right/justify;</strong>   <br>
+                metin yönünü ayarlamak icin kullanilir.     
 
-En distaki, yani tüm div'leri iceren CSS ID'mizin adi <strong>wrapper</strong>.
+                <strong>margin: 0 auto</strong> <br>
+                ilk deger yukari asagisi, ikinci deger sag sol oluyor. <br>
+                normalde saat kadrani gibi hesaplanir 4 adet deger oldugunda. ust sag alt sol <br>
+                top/bottom/right/left <br><br>
 
-
-<hr>
-
-<strong>float: right/left/inherit/none;</strong>
-block elementleri istenilen sekilde hareket ettirebilmek icin kullaniriz. <br>
-sonraki elementler float li olan elemenin altina girecektir. <br>
-onun önüne gecmek ve öncesini yok saymak icin ise <strong>clear: left;</strong> kullanmaliyiz<br>
-istersek yeni bir plok elementi olusturup css kismindan ona <strong>clear: both;</strong>
-özelligi de verebiliriz. bu sekilde öncesi sifirlanmis olur. <br>
- Sonrasinda istersek yeniden yine float lara devam ederiz. <br><br>
-
-<h3>box-sizing</h3>
-<ul>
-    <li><strong>box-sizing: border-box;</strong><br>
-    padding ve border degerleri width - height degerini degistirmeyecektir</li>
-    <li><strong>box-sizing: content-box;</strong><br>
-    padding ve border degerleri (verilmisse) width - height degerini etkileyecektir.(default)</li>
-</ul>
+                En distaki, yani tüm div'leri iceren CSS ID'mizin adi <strong>wrapper</strong>.
 
 
-artikel asside header section footer nav 
+                <hr>
+                <h3>float</h3>
+                <strong>float: right/left/inherit/none;</strong> <br>
+                bir resmin yanina yazi yazmak icin kullanilabilir. <br><br>
+                block elementleri istenilen sekilde hareket ettirebilmek icin kullaniriz. <br>
+                sonraki elementler float li olan elemenin altina girecektir. <br>
+                onun önüne gecmek ve öncesini yok saymak icin ise <strong>clear: left;</strong> kullanmaliyiz<br>
+                istersek yeni bir blok elementi (&lt;div style="clear:both">&lt;/div>) olusturup css kismindan ona <br>
+                <strong>clear: both;</strong> özelligi de verebiliriz. bu sekilde öncesi sifirlanmis olur. <br>
+                Sonrasinda istersek yeniden yine float lara devam ederiz. <br><br>
 
-<strong>line-height: 150px;</strong> <br>
-satir arasindaki  bosluklari acar. <br><br>
+                <hr>
+                <h3>box-sizing</h3>
+                <ul>
+                    <li><strong>box-sizing: border-box;</strong><br>
+                    padding ve border degerleri width - height degerini degistirmeyecektir</li>
+                    <li><strong>box-sizing: content-box;</strong><br>
+                    padding ve border degerleri (verilmisse) width - height degerini etkileyecektir.(default)</li>
+                </ul>
 
-<hr>
 
-<h2>Grid</h2>
-<p>grid icin öncelikle margin ve paddig i SIFIRLAMAK gerekir. <br>
-box-sizing: border-box yapip yapilandirmaya baslanabilir.</p>
+                artikel asside header section footer nav 
 
-<p>bir Conteiner olusturup icindeki satir ve sutun sayisini belirlemeliyiz.</p>
-<strong>display: grid</strong> <br>
-sayfanin grid yapisina göre dizayna edilecegini belirtir. <br><br>
-<strong>grid-template-rows: 200px 200px;</strong><br>
-iki satirdan olusan bir grid yapisini ifade eder. <br><br>
-<strong>grid-template-columns: 200px 200px 200px;</strong><br>
-3 sütunluk bir grid yapisi olusturur. <br><br>
-<strong>grid-template: 200px 200px / 100px 100px 100px;</strong><br>
-hem satir hem sütun a ayni anda olusturabilirz.
-<strong>grid-auto-rows: 200px;</strong> eger satirlara sigmayan hücre olursa alt satirda görünmesini saglar <br><br>
-<strong>1fr</strong> seklinde sütün genisligi kullanirsak fr adedinceesit sütunlara bölünür. <br>
-<strong>grid-template: repeat(2,100px)/1fr 1fr 1fr;</strong> bu sekilde de satir sütün 
-olusturulabilir. <br><br>
-<strong>row-gap: 10px;</strong> satirlar arasi boslugu ifade eder. <br><br>
-<strong>column-gap: 10px;</strong> sütunlar arasi boslugu ifade eder <br><br>
-<strong>gap: 10px</strong> eger hem sütunda hem de satir aralarinda bosluk istenirse kullanilir. <br><br>
-<strong>grid-column-start: 2;</strong> <br>
-<strong>grid-column-end: 3;</strong> <br>
-hücrelere yazilmasi gereken bir özelliktir ve hangi sütunda hücrenin baslayip bitecegini belirler <br> <br>
-<strong>grid-column: span 2;</strong> hucrenin 2 birimlik yer kaplayacagini anlatir. <br><br>
-<strong>grid-row: 1/3;</strong> <br>
-<strong>grid-column: 1/4;</strong> diyerek hücrenin kapsayacagi alan belirlenebilir. <br>
-birinci cizgiden baslar ve 4. cizgide hücre sona erecektir. <br><br>
-<strong>grid-area: header;</strong> ile hücrelere isim verilir. <br>
-<strong>grid-template-areas: "header nav aside" <br>
-    "menu artikel aside" <br>
-    "footer footer footer" </strong> <br>
-    hücreleri isimlendirdikten sonra hangi alana hangi hücrenin gelecegi ayarlanir  <br><br> 
-<p>Eger hücre icindeki yaziyi ortalamak istersek:
-    <ul>
-        <li><strong>display: grid;</strong> ile hücrenin grid te oldugunu bildir.</li>
-        <li><strong>align-items : center;</strong> ile asagiya cek(ama solda kalir)</li>
-        <li><strong>justify-items: center;</strong> ile soldan ortaya cek.</li>
-    </ul>
-</p>    
+                <strong>line-height: 150px;</strong> <br>
+                satir arasindaki  bosluklari acar. <br><br>
 
-<hr>
+                <hr>
 
-<strong>ColorZilla</strong> eklentisini Chrome dan ekleyerek isteneilen yerdeki rengi 
-alabilirsiniz.
+                <h2>Grid</h2>
+                <p>grid icin öncelikle margin ve paddig i SIFIRLAMAK gerekir. <br>
+                box-sizing: border-box yapip yapilandirmaya baslanabilir.</p>
 
-<h3>Resim atama</h3>
-<strong>background-image: url("");</strong> yazarak resmin yolunu yerlestir. <br>
-<strong>background-size: cover;</strong> ile de resim ekrani uygun sekilde kaplasin <br>
-width ve height ini uygun sekilde ayarlamak lazim. <br><br>
-background-size:100px; pixel olarak resmin büyüklügü ayarlanabilir. <br>
-background-size: no-repeat; tekrarlanmaz <br>
-background-size:repat-x; yatay olarak resim tekrarlanir. <br>
-background-size:repeat-y; dikey olarak tekrarlanir. <br>
-background-position: right/left/center top/bottom/center; resmin pozisyonunu belirler. <br>
-background-attachment: fixed; resmi scroll olmasina ragmen sabitler.
+                <p>bir Conteiner olusturup icindeki satir ve sutun sayisini belirlemeliyiz.</p>
+                <strong>display: grid</strong> <br>
+                sayfanin grid yapisina göre dizayna edilecegini belirtir. <br><br>
+                <strong>grid-template-rows: 200px 200px;</strong><br>
+                iki satirdan olusan bir grid yapisini ifade eder. <br><br>
+                <strong>grid-template-columns: 200px 200px 200px;</strong><br>
+                3 sütunluk bir grid yapisi olusturur. <br><br>
+                <strong>grid-template: 200px 200px / 100px 100px 100px;</strong><br>
+                hem satir hem sütun a ayni anda olusturabilirz.
+                <strong>grid-auto-rows: 200px;</strong> eger satirlara sigmayan hücre olursa alt satirda görünmesini saglar <br><br>
+                <strong>1fr</strong> seklinde sütün genisligi kullanirsak fr adedince esit sütunlara bölünür. <br>
+                <strong>grid-template: repeat(2,100px)/1fr 1fr 1fr;</strong> bu sekilde de satir sütün 
+                olusturulabilir. <br><br>
+                <strong>row-gap: 10px;</strong> satirlar arasi boslugu ifade eder. <br><br>
+                <strong>column-gap: 10px;</strong> sütunlar arasi boslugu ifade eder <br><br>
+                <strong>gap: 10px</strong> eger hem sütunda hem de satir aralarinda bosluk istenirse kullanilir. <br><br>
+                <strong>grid-column-start: 2;</strong> <br>
+                <strong>grid-column-end: 3;</strong> <br>
+                hücrelere yazilmasi gereken bir özelliktir ve hangi sütunda hücrenin baslayip bitecegini belirler <br> <br>
+                <strong>grid-column: span 2;</strong> hucrenin 2 birimlik yer kaplayacagini anlatir. <br><br>
+                <strong>grid-row: 1/3;</strong> <br>
+                <strong>grid-column: 1/4;</strong> diyerek hücrenin kapsayacagi alan belirlenebilir. <br>
+                birinci cizgiden baslar ve 4. cizgide hücre sona erecektir. <br><br>
+                <strong>grid-area: header;</strong> ile hücrelere isim verilir. <br>
+                <strong>grid-template-areas: "header nav aside" <br>
+                    "menu artikel aside" <br>
+                    "footer footer footer" </strong> <br>
+                    hücreleri isimlendirdikten sonra hangi alana hangi hücrenin gelecegi ayarlanir  <br><br> 
+                <p>Eger hücre icindeki yaziyi ortalamak istersek:
+                    <ul>
+                        <li><strong>display: grid;</strong> ile hücrenin grid te oldugunu bildir.</li>
+                        <li><strong>align-items : center;</strong> ile asagiya cek(ama solda kalir)</li>
+                        <li><strong>justify-items: center;</strong> ile soldan ortaya cek.</li>
+                    </ul>
+                </p>    
 
-<hr>
-<h3>Display özellikleri</h3>
-özellikle inline elementlere width ve height atayamiyoruz, <br>
-atayabilmek icin; 
-<strong>display: inline-block;</strong> atributu eklememiz gerekir. <br>
-özellikle navbar daki linklerde cok isimize yarayacaktir.
-<hr>
+                <hr>
 
-<h3>Margin</h3>
-egerbir container in sayfada ortada durmasini istersek; <br>
-<strong>width: 50%;</strong> <br>
-<strong>margin-left: auto;</strong> <br>
-<strong>margin-right: auto;</strong> veya margin: 0 auto; <br>
-<hr>
+                <strong>ColorZilla</strong> eklentisini Chrome dan ekleyerek isteneilen yerdeki rengi 
+                alabilirsiniz.
 
-<h3>Padding</h3>
- paddig her zaman container in belirlenen alanini büyütecektir. <br>
- bunu engellemek icin;  <strong>box-sizing: border-box</strong> 
- özelligini kullanmaliyiz. (padding leri dahil et demektir.) <br>
- eger container larla calisilacaksa genel olarak yazilmasi tavsiyedir. <br>
+                <h3>Resim atama</h3>
+                <strong>background-image: url("");</strong> yazarak resmin yolunu yerlestir. <br>
+                <strong>background-size: cover;</strong> ile de resim ekrani uygun sekilde kaplasin <br>
+                width ve height ini uygun sekilde ayarlamak lazim. <br><br>
+                background-size:100px; pixel olarak resmin büyüklügü ayarlanabilir. <br>
+                background-size: no-repeat; tekrarlanmaz <br>
+                background-size:repat-x; yatay olarak resim tekrarlanir. <br>
+                background-size:repeat-y; dikey olarak tekrarlanir. <br>
+                background-position: right/left/center top/bottom/center; resmin pozisyonunu belirler. <br>
+                background-attachment: fixed; resmi scroll olmasina ragmen sabitler.
 
- <hr>
- <h3>ICON kullanma</h3>
-ikon kullanmak icin;
-<a href="https://fontawesome.com/icons">https://fontawesome.com/icons</a>
-adresine gidip istedigimizicon u alip kodunu yapistiralim. <br>
- &lt;i class="fa-solid fa-acorn">&lt;/i> <br>
- Ancak bu kodun calisabilmesi icin head a bir eklenti yapmamiz lazim: <br>
- <a href="https://cdnjs.com/">https://cdnjs.com/</a> sitesine gidip 
- <strong>fontawesome</strong> yazarak aratiyoruz, css dosya uzantisini 
- head a ekliyoruz: <br>
- &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <hr>
+                <h3>Display özellikleri</h3>
+                özellikle inline elementlere width ve height atayamiyoruz, <br>
+                atayabilmek icin; 
+                <strong>display: inline-block;</strong> atributu eklememiz gerekir. <br>
+                özellikle navbar daki linklerde cok isimize yarayacaktir.
+                <hr>
 
- <hr>
- <h3>pseudo klasslari</h3>
-<strong>a:hover{<br>
-    color:red<br>
-    } <br> </strong>
-maus ile üzerine gelince yazi kirmizi renge dönecektir. <br>
-<strong>a:link{}</strong> tiklanmadan önceki halini gösterir.(yesil) <br>
-<strong>a:visited{}</strong> tiklanmis halini belirtir(siyah) <br>
-<strong>a:aktive{}</strong> tiklama sirasindaki halini belirtir(Mavi) <br><br>
+                <h3>Margin</h3>
+                egerbir container in sayfada ortada durmasini istersek; <br>
+                <strong>width: 50%;</strong> <br>
+                <strong>margin-left: auto;</strong> <br>
+                <strong>margin-right: auto;</strong> veya margin: 0 auto; <br>
+                <hr>
 
-<strong>input:focus{}</strong> input üzerine odaklanir <br>
-default özellik oldugu icin <strong>outline: 0 </strong> yaparak
-cercevedeki maviligi götürüp yerine <strong>border: 2px solid red</strong>
- yapabiliriz. <br><br>
+                <h3>Padding</h3>
+                paddig her zaman container in belirlenen alanini büyütecektir. <br>
+                bunu engellemek icin;  <strong>box-sizing: border-box</strong> 
+                özelligini kullanmaliyiz. (padding leri dahil et demektir.) <br>
+                eger container larla calisilacaksa genel olarak yazilmasi tavsiyedir. <br>
 
- <hr>
- <h3>Pseudo elementleri/selektörleri</h3>
- <strong>p::first-line{}</strong> mesela paragrasin ilk satirini yapilandirir. (kirmizi) <br>
- <strong>p::first-letter{}</strong> ilk harfi yapilandirir. <br>
- font-size: 50px; color: blue; <br>
- <strong>p::after/before{content: ""}</strong> öncesi veya sonrasina yazi resim
- link eklenebilir.
+                <hr>
+                <h3>ICON kullanma</h3>
+                ikon kullanmak icin;
+                <a href="https://fontawesome.com/icons">https://fontawesome.com/icons</a>
+                adresine gidip istedigimizicon u alip kodunu yapistiralim. <br>
+                &lt;i class="fa-solid fa-acorn">&lt;/i> <br>
+                Ancak bu kodun calisabilmesi icin head a bir eklenti yapmamiz lazim: <br>
+                <a href="https://cdnjs.com/">https://cdnjs.com/</a> sitesine gidip 
+                <strong>fontawesome</strong> yazarak aratiyoruz, css dosya uzantisini 
+                head a ekliyoruz: <br>
+                &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <hr>
- <h3>Nth-Child Selector</h3>
- <strong>p:nth-child(2){}</strong> mesela 2. paragrafi yapilandirabiliriz. <br>
- <strong>p:first/last-child{color: white; background: red}</strong> ilk veya 
- son cocugu yapilandirir.<br>
- <strong>p:nth-child(even){}</strong> cift elementleri yapilandirir.(2n) <br>
- <strong>p:nth-child(odd){}</strong> tek elementleri yapilandirir.(2n+1) <br>
- <strong>ul li:nth-child(n + 4){}</strong> 4. cocuktan sonrasini yapilandirir. <br>
- 
+                <hr>
+                <h3>pseudo klasslari</h3>
+                <strong>a:hover{<br>
+                    color:red<br>
+                    } <br> </strong>
+                maus ile üzerine gelince yazi kirmizi renge dönecektir. <br>
+                <strong>a:link{}</strong> tiklanmadan önceki halini gösterir.(yesil) <br>
+                <strong>a:visited{}</strong> tiklanmis halini belirtir(siyah) <br>
+                <strong>a:aktive{}</strong> tiklama sirasindaki halini belirtir(Mavi) <br><br>
+
+                <strong>input:focus{}</strong> input üzerine odaklanir <br>
+                default özellik oldugu icin <strong>outline: 0 </strong> yaparak
+                cercevedeki maviligi götürüp yerine <strong>border: 2px solid red</strong>
+                yapabiliriz. <br><br>
+
+                <hr>
+                <h3>Pseudo elementleri/selektörleri</h3>
+                <strong>p::first-line{}</strong> mesela paragrasin ilk satirini yapilandirir. (kirmizi) <br>
+                <strong>p::first-letter{}</strong> ilk harfi yapilandirir. <br>
+                font-size: 50px; color: blue; <br>
+                <strong>p::after/before{content: ""}</strong> öncesi veya sonrasina yazi resim
+                link eklenebilir.
+
+                <hr>
+                <h3>Nth-Child Selector</h3>
+                <strong>p:nth-child(2){}</strong> mesela 2. paragrafi yapilandirabiliriz. <br>
+                <strong>p:first/last-child{color: white; background: red}</strong> ilk veya 
+                son cocugu yapilandirir.<br>
+                <strong>p:nth-child(even){}</strong> cift elementleri yapilandirir.(2n) <br>
+                <strong>p:nth-child(odd){}</strong> tek elementleri yapilandirir.(2n+1) <br>
+                <strong>ul li:nth-child(n + 4){}</strong> 4. cocuktan sonrasini yapilandirir. <br>
+                
+                <hr>
+                <h3>Tablo</h3>
+                <strong>border: 1px solid black;</strong> cerceve olusturur. <br>
+                <strong>border-collapse: collapse</strong> yazarak cerceveler birlesir. <br>
+                cift cizgi halinde görüntü kalmaz. <br>
+                Eger tablo ortada dursun istenirse;<br>
+                <strong>margin-left: auto;</strong> ve <strong>margin-right: auto;</strong> <br>
+                denmeli,(veya margin: 0 auto;) <br>
+                ekranin %75 ini kaplasin istersek; 
+                <strong>width: 75%;</strong> denebilir. <br>
+                <strong>font-size: 1.5em;</strong> ile yazi ayarlanabilir. <br>
+                thead tr {background: green; color: white; } ile arka plan ve yazi rengi degisebilir. <br>
+                tbody tr:nth-child(even){background:grey;} ile cift satirlar renklenir. <br>
+                tbody tr:hover{background: yellow;} ile üzerine gelince renk degisir. <br><br>
+
+                <hr>
+                <h3>Overflow- tasma durumlari</h3>
+                Eger bir metni bir container icine sigdirmak istiyorsak; <br>
+                width:300px yapip height ini kendisinin ayarlamasini istemeliyiz. <br>
+                ancak belirli bir alan vermek zorunda isek; <br>
+                <strong>overflow: hidden;</strong> tasan alani gizler <br>
+                <strong>overflow: visible;</strong> tasan alani da gösterir(default) <br>
+                <strong>overflow: auto;</strong> tasan alan icin scroll özelligi koyar. <br>
+                <strong>overflow: scroll;</strong> tasan alan olmasa bile scroll alani olusturur.
+                <hr>
+
+                <h3>Position- konumlandirma</h3>
+                Sayfada scroll özelligi olsa bile; <br>
+                <strong>position: fixed;</strong> diyerek bir elementi sabitleyebiliriz. <br>
+                sol üst her zaman default özellik olacagi icin o kisma sabitlenecektir. <br>
+                <strong>right: 0;</strong> ve <strong>bottom: 0;</strong> diyerek sag alta konabilir. <br>
+                <strong>position: relative;</strong> dersek elementi bulundugu yerde sabitleyebiliriz. <br>
+                top: 10px; left: 10px; diyerek bulundugu yerdeki elementlerle arasini acabiliriz. <br>
+                eger birbiri üzerine cikmislarsa ve önde görünen degistirilecekse; <br>
+                <strong>z-index: 1;</strong> yapabiliriz. z-index i büyük olan önde görünür. <br>
+                <strong>position: absolute;</strong> kutu icinde kutuyu sabitlemek icin kullanilir. <br>
+                kapsayici kutu kesinlikle <strong>position: static;</strong> olmamalidir (default). <br>
+                bu yuzden fixed, <strong>relative</strong> veya absolute gibi bir özellik almalidir. <br>
+                top: 10px; right: 10px; seklinde distaki kutuya göre ayar yapilabilir.
+                <hr>
+                <h3>responsive tasarimlar- farkli cihaz görünümleri</h3>
+                Bilgisayar tablet ve telefonda farkli ve en uygun görünümlerin saglanmasi adina; <br><br>
+                tabletler icin; <br>
+                <strong>@media(max-width: 768px){}</strong>kodunu style alanina yazmamiz gerekiyor. <br>
+                süslü parantez icindeki özellikler max width e kadar gecerli olacaktir. <br><br>
+
+                telefonlar icin; <br>
+                <strong>@media(max-width: 500px){}</strong> <br><br>
+
+                eger <strong>@media only screen and(){}</strong> görürsek yalnizca tablet ve telefonlarla sinirlandirilmistir. <br><br>
+
+                eger genis ekranda görünsün ama kücük ekranlarda görünmesini istemedigimiz bir element varsa; <br>
+
+                <strong>p {display: none;} <br>
+                    @media(min-width: 768px){p {display: block;}} </strong> yapilabilir. <br><br>
+
+                Responsive tasarimlarda genislikleri px olarak degil de % olarak vermeliyiz. <br><br>
+
+                <hr>
+                <h3>Units- büyüklük kücüklük ayarlamalari</h3>
+                <strong>font-size: 1.5em</strong> parent inin font-size ina göre büyüdükten sonra tekrar büyümüs olabilir.<br>
+                <strong>font-size: 1.5rem</strong> html taginin font size ina göre sayfanin her yerinde aynidir. <br>
+                <strong>font-size: 50%</strong> html taginin font size ina göre sayfanin her yerinde aynidir. <br>
+                <strong>font-size: 40vw</strong> (viewport-width)  ekranin tüm genisliginin %40 ini kaplar<br>
+                <strong>font-size: 10vh</strong> (viewport-height) ekran yüksekliginin %10 unu kaplar<br>
+                eger ekranin tamamini kapsayici bir fotograf kullanmak istenirse; <br>
+                background:url("") center center no-repeat; <br>
+                background-size: cover; <br>
+                height: 100vh; <br>
+                seklinde yapabiliriz. <br>
+
+                <hr>
+                <a href="https://www.pexels.com/de-de/">https://www.pexels.com/de-de/</a> fotograf ihiyaci oldugunda
+                indirmek icin bir site.
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</main>
 </body>
 </html>
