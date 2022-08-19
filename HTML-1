@@ -537,6 +537,20 @@ Eger yazi kutusunun icinde bizden istenilen bilgi yazsin denilirse; <br>
 
 
 type kismina <strong>number</strong> da girilebilir. <br>
+&lt;input type="number"> <br>
+&lt;input type="number" name="quantity" min="1" max="5"> <br>
+&lt;input type="range" min="0" max="20"> <br>
+&lt;input type="date"> <br>
+&lt;input type="month"> <br>
+&lt;input type="week"> <br>
+&lt;input type="datetime-local"> <br>
+&lt;input type="time"> <br>
+&lt;input type="color"> <br>
+&lt;input type="url"> <br>
+&lt;input type="search"> <br>
+&lt;input type="file"> <br>
+<br>
+
 <input type="number"> <br>
 <input type="number" name="quantity" min="1" max="5"> <br>
 <input type="range" min="0" max="20"> <br>
