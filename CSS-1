@@ -73,9 +73,9 @@
                     <li><strong>flex-direction: row;</strong> <br>
                         default özelliktir satirda soldan baslayarak elementleri siralar.</li>
                     <li><strong>flex-direction: row-reverse;</strong><br>
-                        Sola dayayarak siralar</li>
+                        Sola dayayarak siralar.</li>
                     <li><strong>flex-direction:column;</strong><br>
-                        sol üstten baslayarak asagiya dogru siralar <br>
+                        sol üstten baslayarak asagiya dogru siralar. <br>
                         eger Column halinde olursa <strong>align-items</strong> ile <strong>justfy-content</strong>
                         görevleri yer degisecektir!!!</li>
                     <li><strong>flex-direction:column-reverse;</strong><br>
@@ -97,7 +97,7 @@
                         satir halinde sirala ve satir bitince asagiya gec.</li>
                    
                     <li><strong>flex-flow: nowrap column</strong> <br>
-                        sutun halinde sirala ve sutun bitince yanina gec</li>
+                        sutun halinde sirala ve sutun bitince yanina gec.</li>
                 </ul>
                 <h3>align-items</h3>
                 <ul>
