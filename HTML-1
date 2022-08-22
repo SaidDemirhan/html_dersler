@@ -416,9 +416,9 @@ eger resmin boyutunu ayarlamak istersek; <br>
 &lt;/video> <br><br>
 
 <strong>controls</strong> oynatma tuslarini getirir. <br>
-<strong>autoplay</strong> otomatik baslatir<br>
-<strong>muted</strong> sessiz calar<br>
-<strong>loop</strong> bitince bastan yeniden baslatir<br>
+<strong>autoplay</strong> otomatik baslatir <br>
+<strong>muted</strong> sessiz calar <br>
+<strong>loop</strong> bitince bastan yeniden baslatir <br>
 <strong>preload</strong> videonun ne kadar büyük oldugu bilgisi otomatik olarak okunur ve 
 gerekli alani kaplamaya baslar <br>
 <strong>poster="img/poster.jpg"</strong> videoda görünmesi istenilen resim ilk olarak görünür. <br><br>
