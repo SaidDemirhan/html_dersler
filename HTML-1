@@ -585,7 +585,7 @@ yazdirmak istersek css ten yardim almaliyiz.  <br>
 <button onClick="window.print()">Yazdir</button> <br><br>
 
 cinsiyet icin type <strong>radio</strong> olmali, <br>
-eger tek bir secim yapilmasi gerekiyorsa;<br>
+eger tek bir secim yapilmasi gerekiyorsa; <br>
 <strong>name</strong>ler ayni olmalidir. <br><br>
 
 &lt;div> <br>
