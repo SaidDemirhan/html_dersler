@@ -258,7 +258,7 @@ table,td{ <br>
     ama kesinlikle birlistirilince altta kalacak hücreleri sil. <br>
     &lt;td colspan="2">&lt;/td> <br> <br>
 
-    <strong>rowspan="2"</strong>:Sütundaki hücreleri birlestirir. Vertikal<br>
+    <strong>rowspan="2"</strong>:Sütundaki hücreleri birlestirir. Vertikal <br>
     ama kesinlikle birlistirilince sütundalardaki altta kalacak hücreleri sil. <br>
     &lt;td rowspan="2">&lt;/td> <br> <br>
     Ayrica asagidaki tabela bölümleri de kullanilabilir: <br>
