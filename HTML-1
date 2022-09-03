@@ -420,7 +420,7 @@ eger resmin boyutunu ayarlamak istersek; <br>
 <strong>muted</strong> sessiz calar <br>
 <strong>loop</strong> bitince bastan yeniden baslatir <br>
 <strong>preload</strong> videonun ne kadar büyük oldugu bilgisi otomatik olarak okunur ve 
-gerekli alani kaplamaya baslar <br>
+gerekli alani kaplamaya baslar. <br>
 <strong>poster="img/poster.jpg"</strong> videoda görünmesi istenilen resim ilk olarak görünür. <br><br>
 <video controls preload width="400px">
     <source src="media\interdiction-death-to-our-leaders.mp4" type="video/mp4">
